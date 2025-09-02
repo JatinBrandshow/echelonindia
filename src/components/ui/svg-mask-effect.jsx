@@ -58,7 +58,7 @@ export const MaskContainer = ({
                     onMouseLeave={() => {
                         setIsHovered(false);
                     }}
-                    className="relative z-20 text-center text-4xl font-bold px-40">
+                    className="relative z-20 text-center text-4xl font-bold px-2 sm:px-40">
                     {children}
                 </div>
             </motion.div>

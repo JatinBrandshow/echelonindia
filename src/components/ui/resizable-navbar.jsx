@@ -34,7 +34,7 @@ export const Navbar = ({
     return (
         <motion.div
             ref={ref}
-            className={cn("fixed inset-x-0 top-5 z-40 w-full px-2", className)}>
+            className={cn("fixed inset-x-0 top-5 z-[100] w-full px-2", className)}>
             {React.Children.map(children, (child) =>
                 React.isValidElement(child)
                     ? React.cloneElement(child, { visible })

@@ -8,7 +8,7 @@ export function SVGMaskEffect() {
             <MaskContainer
                 revealText={
                     <p
-                        className="text-center text-4xl font-bold text-slate-800 px-40 dark:text-white">
+                        className="text-center text-4xl font-bold text-slate-800 px-2 sm:px-40 dark:text-white">
                         The first rule of MRR Club is you do not talk about MRR Club. The
                         second rule of MRR Club is you DO NOT talk about MRR Club.
                     </p>

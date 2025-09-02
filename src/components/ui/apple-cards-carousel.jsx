@@ -80,7 +80,8 @@ export const Carousel = ({
                 <div
                     className="flex w-full overflow-x-scroll overscroll-x-auto scroll-smooth py-10 [scrollbar-width:none] md:py-20"
                     ref={carouselRef}
-                    onScroll={checkScrollability}>
+                    onScroll={checkScrollability}
+                    >
                     <div
                         className={cn("absolute right-0 z-[1000] h-auto w-[5%] overflow-hidden bg-gradient-to-l")}></div>
 
@@ -173,7 +174,7 @@ export const Card = ({
         <>
             <AnimatePresence>
                 {open && (
-                    <div className="fixed inset-0 z-50 h-screen overflow-auto">
+                    <div className="fixed inset-0 z-[1000] h-screen overflow-auto">
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
@@ -194,7 +195,7 @@ export const Card = ({
                             <motion.p
                                 layoutId={layout ? `category-${card.title}` : undefined}
                                 className="text-base font-medium text-black dark:text-white">
-                                {card.category}
+                                {/* {card.category} */}
                             </motion.p>
                             <motion.p
                                 layoutId={layout ? `title-${card.title}` : undefined}

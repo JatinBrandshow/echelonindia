@@ -10,9 +10,9 @@ export function AppleCarousel() {
     ));
 
     return (
-        <div className="w-full h-full py-20">
+        <div className="w-full h-full py-10">
             <h2
-                className="max-w-7xl pl-4 mx-auto text-xl md:text-5xl text-black ">
+                className="max-w-7xl pl-4 mx-auto font-medium text-3xl md:text-4xl lg:text-5xl text-black ">
                 Get to know your iSad.
             </h2>
             <Carousel items={cards} />
