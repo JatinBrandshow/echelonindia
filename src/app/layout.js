@@ -1,6 +1,7 @@
 import { Work_Sans } from "next/font/google";
 import "../styles/globals.css";
 import { Header } from "@/components/Header";
+import SmoothScroll from "@/components/SmoothScroll";
 
 const workSans = Work_Sans({
   variable: "--font-work-sans",
@@ -18,6 +19,7 @@ export default function RootLayout({ children }) {
     <html lang="en" suppressHydrationWarning={true}>
       <body className={`${workSans.variable} antialiased`}>
         <Header />
+        <SmoothScroll />
         {children}
       </body>
     </html>
