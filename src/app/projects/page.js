@@ -97,7 +97,7 @@ const Projects = () => {
                     <p>With over 1,500 five-star reviews and numerous RealTrends™ awards, Luxury Presence is the leading provider of beautiful, effective real estate websites for agents, teams, and brokers. Check out the portfolio of our most recent website designs.</p>
                 </div>
             </section>
-            <section className="max-w-[1700px] mx-auto px-4 sm:px-6 py-8 sm:py-24 space-y-20">
+            <section className="max-w-[1400px] mx-auto px-4 sm:px-6 py-8 sm:py-24 space-y-20">
                 {projects.map((project, index) => {
                     const isEven = index % 2 === 1 // 2nd, 4th, etc.
                     return (
@@ -106,7 +106,7 @@ const Projects = () => {
                             {isEven && (
                                 <div className="col-span-5 md:col-span-3 drop-shadow-2xl my-auto max-md:h-full max-lg:h-64 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-200 ease-in-out">
                                     <Image
-                                        className="h-[30vh] sm:h-[40vh] lg:h-[50vh] xl:h-[60vh] w-full object-cover"
+                                        className="h-[30vh] sm:h-[40vh] w-full object-cover"
                                         src={project.image}
                                         height={1280}
                                         width={1280}
@@ -138,7 +138,7 @@ const Projects = () => {
                             {!isEven && (
                                 <div className="col-span-5 md:col-span-3 drop-shadow-2xl my-auto max-md:h-full max-lg:h-64 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-200 ease-in-out">
                                     <Image
-                                        className="h-[30vh] sm:h-[40vh] lg:h-[50vh] xl:h-[60vh] w-full object-cover"
+                                        className="h-[30vh] sm:h-[40vh] w-full object-cover"
                                         src={project.image}
                                         height={1280}
                                         width={1280}
