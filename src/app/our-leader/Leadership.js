@@ -24,45 +24,45 @@ export default function Leadership() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-     const [activeCompany, setActiveCompany] = useState(0);
-  
-  const companies = [
-    {
-      id: 0,
-      name: "Dynamic Infradevelopers Pvt Ltd",
-      title: "Founder & Managing Director",
-      period: "1989 - Present",
-      cin: "U74899DL1989PTC037477",
-      description: "Leading real estate group of India, aiming to provide living in a spiritual and healthy environment backed by a commitment to excellence and quality.",
-      focusAreas: ["Housing Societies", "Townships", "Apartments in Northern India"],
-      icon: (
-        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
-        </svg>
-      )
-    },
-    {
-      id: 1,
-      name: "Eminent Infradevelopers Pvt Ltd",
-      title: "Founder & Managing Director",
-      period: "2003 - Present",
-      cin: "U45201DL2003PTC122964",
-      description: "A consortium of leading builders & developers of New Delhi, committed to cater to every section of Society with quality infrastructure.",
-      focusAreas: ["Townships", "Apartments", "Malls and Multiplexes"],
-      icon: (
-        <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-2m2 0H9m2 0H5m2 0H3m2 0v-5a1 1 0 011-1h8a1 1 0 011 1v5m-6 0h4" />
-        </svg>
-      )
-    }
-  ];
+    const [activeCompany, setActiveCompany] = useState(0);
 
-  const stats = [
-    { value: "20+", label: "Years Experience" },
-    { value: "50+", label: "Projects" },
-    { value: "10K+", label: "Customers" },
-    { value: "5+", label: "Cities" }
-  ];
+    const companies = [
+        {
+            id: 0,
+            name: "Dynamic Infradevelopers Pvt Ltd",
+            title: "Founder & Managing Director",
+            period: "1989 - Present",
+            cin: "U74899DL1989PTC037477",
+            description: "Leading real estate group of India, aiming to provide living in a spiritual and healthy environment backed by a commitment to excellence and quality.",
+            focusAreas: ["Housing Societies", "Townships", "Apartments in Northern India"],
+            icon: (
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                </svg>
+            )
+        },
+        {
+            id: 1,
+            name: "Eminent Infradevelopers Pvt Ltd",
+            title: "Founder & Managing Director",
+            period: "2003 - Present",
+            cin: "U45201DL2003PTC122964",
+            description: "A consortium of leading builders & developers of New Delhi, committed to cater to every section of Society with quality infrastructure.",
+            focusAreas: ["Townships", "Apartments", "Malls and Multiplexes"],
+            icon: (
+                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-2m2 0H9m2 0H5m2 0H3m2 0v-5a1 1 0 011-1h8a1 1 0 011 1v5m-6 0h4" />
+                </svg>
+            )
+        }
+    ];
+
+    const stats = [
+        { value: "20+", label: "Years Experience" },
+        { value: "50+", label: "Projects" },
+        { value: "10K+", label: "Customers" },
+        { value: "5+", label: "Cities" }
+    ];
 
     return (
         <div className="min-h-screen bg-gray-50">
@@ -146,145 +146,143 @@ export default function Leadership() {
                 </div>
             </section>
 
-         <section id="experience" className="py-16 bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
-      <div className="container mx-auto px-6">
-        <motion.h2
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-          viewport={{ once: true }}
-          className="text-3xl md:text-4xl font-bold text-center mb-12 text-white"
-        >
-          Professional <span className="text-blue-400">Journey</span>
-        </motion.h2>
+            <section id="experience" className="py-16 bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
+                <div className="container mx-auto px-6">
+                    <motion.h2
+                        initial={{ opacity: 0, y: 20 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5 }}
+                        viewport={{ once: true }}
+                        className="text-3xl md:text-4xl font-bold text-center mb-12 text-white"
+                    >
+                        Professional <span className="text-blue-400">Journey</span>
+                    </motion.h2>
 
-        <div className="max-w-6xl mx-auto">
-          {/* Company Selector Tabs */}
-          <div className="flex justify-center mb-10">
-            <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-1.5 flex border border-gray-700/50">
-              {companies.map((company, index) => (
-                <button
-                  key={company.id}
-                  onClick={() => setActiveCompany(index)}
-                  className={`px-6 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${
-                    activeCompany === index
-                      ? 'bg-blue-600 text-white shadow-md'
-                      : 'text-gray-300 hover:text-white'
-                  }`}
-                >
-                  {company.name}
-                </button>
-              ))}
-            </div>
-          </div>
+                    <div className="max-w-6xl mx-auto">
+                        {/* Company Selector Tabs */}
+                        <div className="flex justify-center mb-10">
+                            <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-1.5 flex border border-gray-700/50">
+                                {companies.map((company, index) => (
+                                    <button
+                                        key={company.id}
+                                        onClick={() => setActiveCompany(index)}
+                                        className={`px-6 py-3 rounded-lg text-sm font-medium transition-all duration-300 ${activeCompany === index
+                                                ? 'bg-blue-600 text-white shadow-md'
+                                                : 'text-gray-300 hover:text-white'
+                                            }`}
+                                    >
+                                        {company.name}
+                                    </button>
+                                ))}
+                            </div>
+                        </div>
 
-          {/* Horizontal Timeline */}
-          <div className="relative mb-12">
-            {/* Timeline Line */}
-            <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-700 via-blue-500 to-blue-700 transform -translate-y-1/2"></div>
-            
-            {/* Timeline Points */}
-            <div className="relative flex justify-between">
-              {companies.map((company, index) => (
-                <div 
-                  key={company.id}
-                  className="relative"
-                  onClick={() => setActiveCompany(index)}
-                >
-                  <div 
-                    className={`w-6 h-6 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 ${
-                      activeCompany === index 
-                        ? 'bg-blue-500 scale-125' 
-                        : 'bg-gray-700 hover:bg-blue-600'
-                    }`}
-                  >
-                    <div className="w-2 h-2 bg-white rounded-full"></div>
-                  </div>
-                  <div className="absolute top-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
-                    <span className="text-xs text-gray-300 bg-gray-800 px-2 py-1 rounded-md">
-                      {company.period}
-                    </span>
-                  </div>
+                        {/* Horizontal Timeline */}
+                        <div className="relative mb-12">
+                            {/* Timeline Line */}
+                            <div className="absolute top-1/2 left-0 right-0 h-0.5 bg-gradient-to-r from-blue-700 via-blue-500 to-blue-700 transform -translate-y-1/2"></div>
+
+                            {/* Timeline Points */}
+                            <div className="relative flex justify-between">
+                                {companies.map((company, index) => (
+                                    <div
+                                        key={company.id}
+                                        className="relative"
+                                        onClick={() => setActiveCompany(index)}
+                                    >
+                                        <div
+                                            className={`w-6 h-6 rounded-full flex items-center justify-center cursor-pointer transition-all duration-300 ${activeCompany === index
+                                                    ? 'bg-blue-500 scale-125'
+                                                    : 'bg-gray-700 hover:bg-blue-600'
+                                                }`}
+                                        >
+                                            <div className="w-2 h-2 bg-white rounded-full"></div>
+                                        </div>
+                                        <div className="absolute top-8 left-1/2 transform -translate-x-1/2 whitespace-nowrap">
+                                            <span className="text-xs text-gray-300 bg-gray-800 px-2 py-1 rounded-md">
+                                                {company.period}
+                                            </span>
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+                        </div>
+
+                        {/* Company Content */}
+                        <motion.div
+                            key={activeCompany}
+                            initial={{ opacity: 0, y: 20 }}
+                            animate={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5 }}
+                            className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50 shadow-lg mb-12"
+                        >
+                            <div className="flex items-start mb-6">
+                                <div className="bg-blue-600 rounded-lg p-3 mr-4 flex-shrink-0">
+                                    {companies[activeCompany].icon}
+                                </div>
+                                <div>
+                                    <h3 className="text-2xl font-bold text-white mb-1">
+                                        {companies[activeCompany].title}
+                                    </h3>
+                                    <p className="text-lg text-blue-300 font-semibold">
+                                        {companies[activeCompany].name}
+                                    </p>
+                                    <div className="text-gray-400 text-xs font-mono mt-1 tracking-tight">
+                                        CIN: {companies[activeCompany].cin}
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p className="text-gray-300 mb-6 leading-relaxed">
+                                {companies[activeCompany].description}
+                            </p>
+
+                            <div className="mb-6">
+                                <h4 className="text-sm font-semibold text-blue-300 mb-3 uppercase tracking-wider">
+                                    Focus Areas
+                                </h4>
+                                <div className="flex flex-wrap gap-2">
+                                    {companies[activeCompany].focusAreas.map((area, index) => (
+                                        <span
+                                            key={index}
+                                            className="bg-gray-700/50 text-gray-300 text-sm px-3 py-1.5 rounded-lg border border-gray-600/50"
+                                        >
+                                            {area}
+                                        </span>
+                                    ))}
+                                </div>
+                            </div>
+                        </motion.div>
+
+                        {/* Stats Section */}
+                        <motion.div
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.7, delay: 0.4 }}
+                            viewport={{ once: true }}
+                            className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50 shadow-sm"
+                        >
+                            <h3 className="text-xl font-bold text-center text-white mb-8">Career Highlights</h3>
+
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                                {stats.map((stat, index) => (
+                                    <motion.div
+                                        key={index}
+                                        className="p-4 rounded-lg bg-gray-700/50 border border-gray-600 hover:bg-gray-700/70 transition-colors duration-300"
+                                        whileHover={{
+                                            y: -5,
+                                            transition: { duration: 0.2 }
+                                        }}
+                                    >
+                                        <div className="text-2xl md:text-3xl font-bold text-blue-300 mb-1">{stat.value}</div>
+                                        <div className="text-xs text-gray-300 uppercase tracking-wide">{stat.label}</div>
+                                    </motion.div>
+                                ))}
+                            </div>
+                        </motion.div>
+                    </div>
                 </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Company Content */}
-          <motion.div
-            key={activeCompany}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5 }}
-            className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50 shadow-lg mb-12"
-          >
-            <div className="flex items-start mb-6">
-              <div className="bg-blue-600 rounded-lg p-3 mr-4 flex-shrink-0">
-                {companies[activeCompany].icon}
-              </div>
-              <div>
-                <h3 className="text-2xl font-bold text-white mb-1">
-                  {companies[activeCompany].title}
-                </h3>
-                <p className="text-lg text-blue-300 font-semibold">
-                  {companies[activeCompany].name}
-                </p>
-                <div className="text-gray-400 text-xs font-mono mt-1 tracking-tight">
-                  CIN: {companies[activeCompany].cin}
-                </div>
-              </div>
-            </div>
-
-            <p className="text-gray-300 mb-6 leading-relaxed">
-              {companies[activeCompany].description}
-            </p>
-
-            <div className="mb-6">
-              <h4 className="text-sm font-semibold text-blue-300 mb-3 uppercase tracking-wider">
-                Focus Areas
-              </h4>
-              <div className="flex flex-wrap gap-2">
-                {companies[activeCompany].focusAreas.map((area, index) => (
-                  <span 
-                    key={index}
-                    className="bg-gray-700/50 text-gray-300 text-sm px-3 py-1.5 rounded-lg border border-gray-600/50"
-                  >
-                    {area}
-                  </span>
-                ))}
-              </div>
-            </div>
-          </motion.div>
-
-          {/* Stats Section */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.7, delay: 0.4 }}
-            viewport={{ once: true }}
-            className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50 shadow-sm"
-          >
-            <h3 className="text-xl font-bold text-center text-white mb-8">Career Highlights</h3>
-
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
-              {stats.map((stat, index) => (
-                <motion.div 
-                  key={index}
-                  className="p-4 rounded-lg bg-gray-700/50 border border-gray-600 hover:bg-gray-700/70 transition-colors duration-300"
-                  whileHover={{ 
-                    y: -5,
-                    transition: { duration: 0.2 }
-                  }}
-                >
-                  <div className="text-2xl md:text-3xl font-bold text-blue-300 mb-1">{stat.value}</div>
-                  <div className="text-xs text-gray-300 uppercase tracking-wide">{stat.label}</div>
-                </motion.div>
-              ))}
-            </div>
-          </motion.div>
-        </div>
-      </div>
-    </section>
+            </section>
 
 
             <section id="companies" className="py-20 bg-white overflow-hidden">
@@ -306,32 +304,76 @@ export default function Leadership() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.7, delay: 0.2 }}
                             viewport={{ once: true }}
-                            whileHover={{
-                                y: -15,
-                                rotateY: 5,
-                                transition: { duration: 0.3 }
-                            }}
-                            className="company-card bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 border border-gray-100"
+                            className="company-card bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 border border-gray-100 relative"
                             style={{
                                 transformStyle: 'preserve-3d',
-                                perspective: '1000px'
                             }}
+                            whileHover="hover"
                         >
-                            <div className="h-48 bg-gradient-to-r from-blue-800 to-blue-600 flex items-center justify-center relative overflow-hidden">
+                            {/* 3D hover effect element */}
+                            <motion.div
+                                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 rounded-2xl"
+                                variants={{
+                                    hover: {
+                                        opacity: 1,
+                                        transition: { duration: 0.5 }
+                                    }
+                                }}
+                                style={{
+                                    transform: 'translateZ(40px)',
+                                    filter: 'blur(10px)'
+                                }}
+                            />
+
+                            <div
+                                className="h-48 bg-gradient-to-r from-blue-800 to-blue-600 flex items-center justify-center relative overflow-hidden"
+                                style={{ transformStyle: 'preserve-3d' }}
+                            >
                                 <div className="absolute inset-0 bg-black opacity-20"></div>
-                                <div className="absolute top-4 right-4 bg-white text-blue-800 text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                <div
+                                    className="absolute top-4 right-4 bg-white text-blue-800 text-xs font-bold px-3 py-1 rounded-full shadow-md"
+                                    style={{ transform: 'translateZ(30px)' }}
+                                >
                                     SINCE 1989
                                 </div>
-                                <h3 className="text-2xl font-bold text-white relative z-10 text-center px-4">Dynamic Infradevelopers Pvt Ltd</h3>
-                                <div
-                                    className="absolute inset-0 opacity-0 transition-opacity duration-500 hover:opacity-30 bg-gradient-to-r from-transparent via-white to-transparent"
-                                    style={{ transform: 'skewX(-12deg) translateX(-40px)' }}
-                                ></div>
+                                <h3
+                                    className="text-2xl font-bold text-white relative z-10 text-center px-4"
+                                    style={{ transform: 'translateZ(20px)' }}
+                                >
+                                    Dynamic Infradevelopers Pvt Ltd
+                                </h3>
+                                <motion.div
+                                    className="absolute inset-0 opacity-0 bg-gradient-to-r from-transparent via-white to-transparent"
+                                    variants={{
+                                        hover: {
+                                            opacity: 0.3,
+                                            x: ['0%', '100%'],
+                                            transition: {
+                                                opacity: { duration: 0.5 },
+                                                x: { duration: 0.8, repeat: Infinity, repeatType: "loop" }
+                                            }
+                                        }
+                                    }}
+                                    style={{
+                                        transform: 'skewX(-12deg) translateX(-40px)',
+                                        transformStyle: 'preserve-3d'
+                                    }}
+                                />
                             </div>
-                            <div className="p-6">
-                                <p className="text-gray-500 text-sm mb-2 font-mono">CIN: U74899DL1989PTC037477</p>
-                                <p className="text-gray-700 mb-4 leading-relaxed">Leading real estate group of India, aiming to provide living in a spiritual and healthy environment backed by a commitment to excellence and quality.</p>
-                                <div className="mb-4">
+                            <div className="p-6" style={{ transformStyle: 'preserve-3d' }}>
+                                <p
+                                    className="text-gray-500 text-sm mb-2 font-mono"
+                                    style={{ transform: 'translateZ(10px)' }}
+                                >
+                                    CIN: U74899DL1989PTC037477
+                                </p>
+                                <p
+                                    className="text-gray-700 mb-4 leading-relaxed"
+                                    style={{ transform: 'translateZ(10px)' }}
+                                >
+                                    Leading real estate group of India, aiming to provide living in a spiritual and healthy environment backed by a commitment to excellence and quality.
+                                </p>
+                                <div className="mb-4" style={{ transform: 'translateZ(15px)' }}>
                                     <div className="flex items-center mb-2">
                                         <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
                                         <span className="text-gray-800 font-medium">Housing societies</span>
@@ -345,13 +387,21 @@ export default function Leadership() {
                                         <span className="text-gray-800 font-medium">Apartments in northern India</span>
                                     </div>
                                 </div>
-                                <button className="mt-4 text-blue-600 hover:text-blue-800 font-semibold flex items-center group">
+                                <motion.button
+                                    className="mt-4 text-blue-600 hover:text-blue-800 font-semibold flex items-center group"
+                                    style={{ transform: 'translateZ(20px)' }}
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                >
                                     Explore Projects
                                     <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                     </svg>
-                                </button>
+                                </motion.button>
                             </div>
+
+                            {/* 3D edge highlights */}
+                            <div className="absolute inset-0 rounded-2xl opacity-0 pointer-events-none border-2 border-white/20 transition-opacity duration-300 group-hover:opacity-100" />
                         </motion.div>
 
                         {/* Eminent Infradevelopers Card */}
@@ -360,32 +410,76 @@ export default function Leadership() {
                             whileInView={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.7, delay: 0.4 }}
                             viewport={{ once: true }}
-                            whileHover={{
-                                y: -15,
-                                rotateY: -5,
-                                transition: { duration: 0.3 }
-                            }}
-                            className="company-card bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 border border-gray-100"
+                            className="company-card bg-white rounded-2xl shadow-xl overflow-hidden transition-all duration-300 border border-gray-100 relative"
                             style={{
                                 transformStyle: 'preserve-3d',
-                                perspective: '1000px'
                             }}
+                            whileHover="hover"
                         >
-                            <div className="h-48 bg-gradient-to-r from-blue-600 to-blue-400 flex items-center justify-center relative overflow-hidden">
+                            {/* 3D hover effect element */}
+                            <motion.div
+                                className="absolute inset-0 bg-gradient-to-r from-transparent via-white/30 to-transparent opacity-0 rounded-2xl"
+                                variants={{
+                                    hover: {
+                                        opacity: 1,
+                                        transition: { duration: 0.5 }
+                                    }
+                                }}
+                                style={{
+                                    transform: 'translateZ(40px)',
+                                    filter: 'blur(10px)'
+                                }}
+                            />
+
+                            <div
+                                className="h-48 bg-gradient-to-r from-blue-600 to-blue-400 flex items-center justify-center relative overflow-hidden"
+                                style={{ transformStyle: 'preserve-3d' }}
+                            >
                                 <div className="absolute inset-0 bg-black opacity-20"></div>
-                                <div className="absolute top-4 right-4 bg-white text-blue-600 text-xs font-bold px-3 py-1 rounded-full shadow-md">
+                                <div
+                                    className="absolute top-4 right-4 bg-white text-blue-600 text-xs font-bold px-3 py-1 rounded-full shadow-md"
+                                    style={{ transform: 'translateZ(30px)' }}
+                                >
                                     SINCE 2003
                                 </div>
-                                <h3 className="text-2xl font-bold text-white relative z-10 text-center px-4">Eminent Infradevelopers Pvt Ltd</h3>
-                                <div
-                                    className="absolute inset-0 opacity-0 transition-opacity duration-500 hover:opacity-30 bg-gradient-to-r from-transparent via-white to-transparent"
-                                    style={{ transform: 'skewX(-12deg) translateX(-40px)' }}
-                                ></div>
+                                <h3
+                                    className="text-2xl font-bold text-white relative z-10 text-center px-4"
+                                    style={{ transform: 'translateZ(20px)' }}
+                                >
+                                    Eminent Infradevelopers Pvt Ltd
+                                </h3>
+                                <motion.div
+                                    className="absolute inset-0 opacity-0 bg-gradient-to-r from-transparent via-white to-transparent"
+                                    variants={{
+                                        hover: {
+                                            opacity: 0.3,
+                                            x: ['0%', '100%'],
+                                            transition: {
+                                                opacity: { duration: 0.5 },
+                                                x: { duration: 0.8, repeat: Infinity, repeatType: "loop" }
+                                            }
+                                        }
+                                    }}
+                                    style={{
+                                        transform: 'skewX(-12deg) translateX(-40px)',
+                                        transformStyle: 'preserve-3d'
+                                    }}
+                                />
                             </div>
-                            <div className="p-6">
-                                <p className="text-gray-500 text-sm mb-2 font-mono">CIN: U45201DL2003PTC122964</p>
-                                <p className="text-gray-700 mb-4 leading-relaxed">A consortium of leading builders & developers of New Delhi, committed to cater to every section of Society.</p>
-                                <div className="mb-4">
+                            <div className="p-6" style={{ transformStyle: 'preserve-3d' }}>
+                                <p
+                                    className="text-gray-500 text-sm mb-2 font-mono"
+                                    style={{ transform: 'translateZ(10px)' }}
+                                >
+                                    CIN: U45201DL2003PTC122964
+                                </p>
+                                <p
+                                    className="text-gray-700 mb-4 leading-relaxed"
+                                    style={{ transform: 'translateZ(10px)' }}
+                                >
+                                    A consortium of leading builders & developers of New Delhi, committed to cater to every section of Society.
+                                </p>
+                                <div className="mb-4" style={{ transform: 'translateZ(15px)' }}>
                                     <div className="flex items-center mb-2">
                                         <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
                                         <span className="text-gray-800 font-medium">Townships</span>
@@ -399,19 +493,26 @@ export default function Leadership() {
                                         <span className="text-gray-800 font-medium">Malls and multiplexes</span>
                                     </div>
                                 </div>
-                                <button className="mt-4 text-blue-600 hover:text-blue-800 font-semibold flex items-center group">
+                                <motion.button
+                                    className="mt-4 text-blue-600 hover:text-blue-800 font-semibold flex items-center group"
+                                    style={{ transform: 'translateZ(20px)' }}
+                                    whileHover={{ scale: 1.05 }}
+                                    whileTap={{ scale: 0.95 }}
+                                >
                                     Explore Projects
                                     <svg className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
                                     </svg>
-                                </button>
+                                </motion.button>
                             </div>
+
+                            {/* 3D edge highlights */}
+                            <div className="absolute inset-0 rounded-2xl opacity-0 pointer-events-none border-2 border-white/20 transition-opacity duration-300 group-hover:opacity-100" />
                         </motion.div>
                     </div>
                 </div>
             </section>
 
-            \
 
             <style jsx>{`
         .hero-bg {
