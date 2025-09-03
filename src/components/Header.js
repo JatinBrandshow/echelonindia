@@ -23,8 +23,8 @@ export function Header() {
       link: "/projects",
     },
     {
-      name: "Investors",
-      link: "/investors",
+      name: "Leadership",
+      link: "/our-leader",
     },
     {
       name: "Blogs",

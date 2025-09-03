@@ -3,7 +3,7 @@ const navigation = {
         { name: 'About', href: '#' },
         { name: 'Projects', href: '#' },
         { name: 'Investors', href: '#' },
-        { name: 'Blogs', href: '#' },
+        { name: 'Leadership', href: '#' },
         { name: 'Accessibility', href: '#' },
         { name: 'Partners', href: '#' },
     ],
