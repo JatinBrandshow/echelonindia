@@ -9,15 +9,15 @@ export function SVGMaskEffect() {
                 revealText={
                     <p
                         className="text-center text-4xl font-bold text-slate-800 px-2 sm:px-40 dark:text-white">
-                        The first rule of MRR Club is you do not talk about MRR Club. The
-                        second rule of MRR Club is you DO NOT talk about MRR Club.
+                          From dream homes , premium properties and thriving commercial spaces -we build the future you deserve
                     </p>
                 }
                 className="h-[40rem] rounded-md border text-white dark:text-black">
-                Discover the power of{" "}
-                <span className="text-blue-500">Tailwind CSS v4</span> with native CSS
-                variables and container queries with
-                <span className="text-blue-500">advanced animations</span>.
+                Your trusted partner for{" "}
+                <span className="text-blue-500">real estate</span> — whether it’s a dream{" "}
+                <span className="text-blue-500">home</span>, prime{" "}
+                <span className="text-blue-500">property</span>, or strategic{" "}
+                <span className="text-blue-500">commercial space</span>.
             </MaskContainer>
         </div>
     );
