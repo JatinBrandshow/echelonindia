@@ -52,41 +52,65 @@ const DummyContent = () => {
 };
 
 const data = [
-    {
-        category: "Artificial Intelligence",
-        title: "You can do more with AI.",
-        src: "https://images.unsplash.com/photo-1593508512255-86ab42a8e620?q=80&w=3556&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        content: <DummyContent />,
-    },
-    {
-        category: "Productivity",
-        title: "Enhance your productivity.",
-        src: "https://images.unsplash.com/photo-1531554694128-c4c6665f59c2?q=80&w=3387&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        content: <DummyContent />,
-    },
-    {
-        category: "Product",
-        title: "Launching the new Apple Vision Pro.",
-        src: "https://images.unsplash.com/photo-1713869791518-a770879e60dc?q=80&w=2333&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        content: <DummyContent />,
-    },
-
-    {
-        category: "Product",
-        title: "Maps for your iPhone 15 Pro Max.",
-        src: "https://images.unsplash.com/photo-1599202860130-f600f4948364?q=80&w=2515&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        content: <DummyContent />,
-    },
-    {
-        category: "iOS",
-        title: "Photography just got better.",
-        src: "https://images.unsplash.com/photo-1602081957921-9137a5d6eaee?q=80&w=2793&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        content: <DummyContent />,
-    },
-    {
-        category: "Hiring",
-        title: "Hiring for a Staff Software Engineer",
-        src: "https://images.unsplash.com/photo-1511984804822-e16ba72f5848?q=80&w=2048&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        content: <DummyContent />,
-    },
+  {
+    category: "Completed Projects",
+    title: "EMERALD RESIDENCY IN DAYAL BAGH, AGRA",
+    src: "https://images.unsplash.com/photo-1568605114967-8130f3a36994?q=80&w=2670&auto=format&fit=crop",
+    content: <DummyContent />,
+  },
+  {
+    category: "Completed Projects",
+    title: "EMERALD SQUARE IN KHANDARI, AGRA",
+    src: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2787&auto=format&fit=crop",
+    content: <DummyContent />,
+  },
+  {
+    category: "Completed Projects",
+    title: "CITY MALL IN SONEPAT",
+    src: "https://images.unsplash.com/photo-1505691938895-1758d7feb511?q=80&w=2787&auto=format&fit=crop",
+    content: <DummyContent />,
+  },
+  {
+    category: "Completed Projects",
+    title: "AAROGYAM IN HARIDWAR",
+    src: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?q=80&w=2787&auto=format&fit=crop",
+    content: <DummyContent />,
+  },
+  {
+    category: "Completed Projects",
+    title: "GULMOHAR IN AGRA",
+    src: "https://images.unsplash.com/photo-1600585154526-990dced4db0d?q=80&w=2787&auto=format&fit=crop",
+    content: <DummyContent />,
+  },
+  {
+    category: "Completed Projects",
+    title: "GARDEN CITY IN LUDHIANA",
+    src: "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?q=80&w=2787&auto=format&fit=crop",
+    content: <DummyContent />,
+  },
+  {
+    category: "Completed Projects",
+    title: "COMMERCIAL BUILDING IN NOIDA",
+    src: "https://images.unsplash.com/photo-1529429617124-95b109e86bb8?q=80&w=2787&auto=format&fit=crop",
+    content: <DummyContent />,
+  },
+  {
+    category: "Completed Projects",
+    title: "TULSI RESIDENCY IN GOVARDHAN, MATHURA",
+    src: "https://images.unsplash.com/photo-1501183638710-841dd1904471?q=80&w=2787&auto=format&fit=crop",
+    content: <DummyContent />,
+  },
+  {
+    category: "Completed Projects",
+    title: "MANGAL HEIGHTS AT RAJ NAGAR EXTENSION, GHAZIABAD",
+    src: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=2787&auto=format&fit=crop",
+    content: <DummyContent />,
+  },
+  {
+    category: "Completed Projects",
+    title: "GARDEN CITY IN RUDRAPUR",
+    src: "https://images.unsplash.com/photo-1502673530728-f79b4cab31b1?q=80&w=2787&auto=format&fit=crop",
+    content: <DummyContent />,
+  },
 ];
+
