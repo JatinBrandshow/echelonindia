@@ -104,9 +104,9 @@ const Projects = () => {
                         <div key={index} className="grid grid-cols-5 gap-8">
                             {/* Image First if Even */}
                             {isEven && (
-                                <div className="col-span-5 md:col-span-3 my-auto max-md:h-full max-lg:h-64 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-200 ease-in-out">
+                                <div className="col-span-5 md:col-span-3 drop-shadow-2xl my-auto max-md:h-full max-lg:h-64 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-200 ease-in-out">
                                     <Image
-                                        className="h-96 w-full object-cover"
+                                        className="h-[30vh] sm:h-[40vh] lg:h-[50vh] xl:h-[60vh] w-full object-cover"
                                         src={project.image}
                                         height={1280}
                                         width={1280}
@@ -136,9 +136,9 @@ const Projects = () => {
 
                             {/* Image Second if Odd */}
                             {!isEven && (
-                                <div className="col-span-5 md:col-span-3 my-auto max-md:h-full max-lg:h-64 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-200 ease-in-out">
+                                <div className="col-span-5 md:col-span-3 drop-shadow-2xl my-auto max-md:h-full max-lg:h-64 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-200 ease-in-out">
                                     <Image
-                                        className="h-96 w-full object-cover"
+                                        className="h-[30vh] sm:h-[40vh] lg:h-[50vh] xl:h-[60vh] w-full object-cover"
                                         src={project.image}
                                         height={1280}
                                         width={1280}
