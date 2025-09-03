@@ -195,12 +195,12 @@ export const Card = ({
                                 layoutId={layout ? `category-${card.title}` : undefined}
                                 className="text-base font-medium text-black dark:text-white">
                                 {card.category}
-                            </motion.p>
+                            </motion.p> */}
                             <motion.p
                                 layoutId={layout ? `title-${card.title}` : undefined}
-                                className="mt-4 text-2xl font-semibold text-neutral-700 md:text-5xl dark:text-white">
-                                {card.title}
-                            </motion.p> */}
+                                className="mt-4 text-2xl text-center font-semibold md:text-4xl text-white">
+                                PLANS
+                            </motion.p>
                             <div className="py-10">{card.content}</div>
                         </motion.div>
                     </div>
