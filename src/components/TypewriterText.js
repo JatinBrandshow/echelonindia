@@ -3,26 +3,26 @@ import { TypewriterEffectSmooth } from "./ui/typewriter-effect";
 export function TypewriterText() {
     const words = [
         {
-            text: "Build a",
+            text: "Find  y",
         },
         {
-            text: "wesome a",
+            text: "our d",
         },
         {
-            text: "pps w",
+            text: "ream h",
         },
         {
-            text: "ith A",
+            text: "ome w",
         },
         {
-            text: "ceternity.",
+            text: "ith us.",
             className: "text-blue-500 dark:text-blue-500",
         },
     ];
     return (
         <div className="flex flex-col items-center justify-center h-full py-6  ">
             <p className="text-gray-600 text-xs sm:text-base  ">
-                The road to freedom starts from here
+                Turning your dream of a perfect home into reality
             </p>
             <TypewriterEffectSmooth words={words} />
             <div

@@ -44,7 +44,7 @@ export default function Leadership() {
             {/* About Section */}
             <section id="about" className="py-20 bg-white">
                 <div className="container mx-auto px-6">
-                    <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">About Me</h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">About </h2>
                     <div className="flex flex-col md:flex-row items-center">
                         <div className="md:w-1/3 mb-10 md:mb-0 flex justify-center">
                             <div className="w-64 h-64 bg-blue-100 rounded-full overflow-hidden shadow-xl">
