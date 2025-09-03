@@ -12,10 +12,10 @@ export function TypewriterText() {
             text: "ream h",
         },
         {
-            text: "ome w",
+            text: "ome with E",
         },
         {
-            text: "ith us.",
+            text: "chelon.",
             className: "text-blue-500 dark:text-blue-500",
         },
     ];
