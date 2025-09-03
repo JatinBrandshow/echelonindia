@@ -106,104 +106,168 @@ export default function About() {
                 </div>
             </section>
 
-            <section id="experience" className="py-20 bg-gradient-to-br from-gray-50 to-blue-50 overflow-hidden">
+            <section id="experience" className="py-20 bg-gradient-to-br from-gray-900 to-gray-800 overflow-hidden">
                 <div className="container mx-auto px-6">
                     <motion.h2
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
-                        className="text-3xl md:text-4xl font-bold text-center mb-16"
+                        className="text-3xl md:text-4xl font-bold text-center mb-16 text-white"
                     >
-                        Professional <span className="text-blue-600">Journey</span>
+                        Professional <span className="text-blue-400">Journey</span>
                     </motion.h2>
 
                     <div className="max-w-4xl mx-auto">
-                        {/* Dynamic Infradevelopers Experience */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.7 }}
-                            viewport={{ once: true }}
-                            className="mb-16 relative pl-10 md:pl-0"
-                        >
-                            {/* Year Indicator */}
-                            <div className="absolute -left-2 md:left-auto md:right-full md:mr-6 top-0 bg-blue-600 text-white text-sm font-bold px-3 py-1 rounded-full">
-                                1989 - Present
-                            </div>
+                        {/* Timeline Container */}
+                        <div className="relative">
+                            {/* Vertical Timeline Line */}
+                            <div className="absolute left-4 md:left-1/2 h-full w-0.5 bg-gradient-to-b from-blue-700 via-blue-500 to-blue-700 transform -translate-x-1/2"></div>
 
-                            {/* Content */}
-                            <div className="border-l-4 border-blue-200 pl-6 md:pl-8 py-2">
-                                <h3 className="text-xl font-bold text-gray-800 mb-1">Founder & Managing Director</h3>
-                                <p className="text-lg text-blue-700 font-semibold mb-2">Dynamic Infradevelopers Pvt Ltd</p>
-                                <div className="text-gray-500 text-sm font-mono mb-4">CIN: U74899DL1989PTC037477</div>
+                            {/* Dynamic Infradevelopers Experience */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.7 }}
+                                viewport={{ once: true }}
+                                className="mb-12 relative"
+                            >
+                                <div className="flex flex-col md:flex-row items-start">
+                                    {/* Timeline Icon (Left for desktop) */}
+                                    <div className="hidden md:flex md:w-1/2 md:pr-10 md:justify-end">
+                                        <div className="relative">
+                                            <div className="absolute -right-11 top-1 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center z-10 shadow-lg border border-blue-400">
+                                                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                                </svg>
+                                            </div>
+                                            <div className="text-right mt-2 mr-2">
+                                                <div className="bg-blue-800 text-blue-100 text-sm font-semibold px-3 py-1 rounded-full inline-block border border-blue-700">
+                                                    1989 - Present
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
 
-                                <p className="text-gray-600 mb-4 leading-relaxed">
-                                    Leading real estate group of India, aiming to provide living in a spiritual and healthy environment backed by a commitment to excellence and quality.
-                                </p>
+                                    {/* Timeline Icon (Mobile) */}
+                                    <div className="md:hidden absolute -left-9 top-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center z-10 shadow-lg border border-blue-400">
+                                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
+                                        </svg>
+                                    </div>
 
-                                <div className="mb-4">
-                                    <h4 className="text-sm font-semibold text-gray-700 mb-2 uppercase tracking-wide">Focus Areas</h4>
-                                    <ul className="space-y-1">
-                                        <li className="flex items-start">
-                                            <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-2"></div>
-                                            <span className="text-gray-700">Housing Societies</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-2"></div>
-                                            <span className="text-gray-700">Townships</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-2"></div>
-                                            <span className="text-gray-700">Apartments in Northern India</span>
-                                        </li>
-                                    </ul>
+                                    {/* Content */}
+                                    <div className="md:w-1/2 md:pl-10 ml-10 md:ml-0">
+                                        {/* Year for mobile */}
+                                        <div className="md:hidden mb-3">
+                                            <div className="bg-blue-800 text-blue-100 text-sm font-semibold px-3 py-1 rounded-full inline-block border border-blue-700">
+                                                1989 - Present
+                                            </div>
+                                        </div>
+
+                                        <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 shadow-sm hover:shadow-md transition-shadow">
+                                            <h3 className="text-xl font-bold text-white mb-1">Founder & Managing Director</h3>
+                                            <p className="text-lg text-blue-300 font-semibold mb-2">Dynamic Infradevelopers Pvt Ltd</p>
+                                            <div className="text-gray-400 text-xs font-mono mb-4 tracking-tight">CIN: U74899DL1989PTC037477</div>
+
+                                            <p className="text-gray-300 mb-4 leading-relaxed text-sm">
+                                                Leading real estate group of India, aiming to provide living in a spiritual and healthy environment backed by a commitment to excellence and quality.
+                                            </p>
+
+                                            <div className="mb-4">
+                                                <h4 className="text-xs font-semibold text-blue-300 mb-2 uppercase tracking-wider">Focus Areas</h4>
+                                                <ul className="space-y-1.5">
+                                                    <li className="flex items-start">
+                                                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
+                                                        <span className="text-gray-300 text-sm">Housing Societies</span>
+                                                    </li>
+                                                    <li className="flex items-start">
+                                                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
+                                                        <span className="text-gray-300 text-sm">Townships</span>
+                                                    </li>
+                                                    <li className="flex items-start">
+                                                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
+                                                        <span className="text-gray-300 text-sm">Apartments in Northern India</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </motion.div>
+                            </motion.div>
 
-                        {/* Eminent Infradevelopers Experience */}
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.7, delay: 0.2 }}
-                            viewport={{ once: true }}
-                            className="mb-16 relative pl-10 md:pl-0"
-                        >
-                            {/* Year Indicator */}
-                            <div className="absolute -left-2 md:left-auto md:right-full md:mr-6 top-0 bg-blue-600 text-white text-sm font-bold px-3 py-1 rounded-full">
-                                2003 - Present
-                            </div>
+                            {/* Eminent Infradevelopers Experience */}
+                            <motion.div
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.7, delay: 0.2 }}
+                                viewport={{ once: true }}
+                                className="mb-12 relative"
+                            >
+                                <div className="flex flex-col md:flex-row items-start">
+                                    {/* Timeline Icon (Mobile) */}
+                                    <div className="md:hidden absolute -left-9 top-0 w-8 h-8 bg-blue-600 rounded-full flex items-center justify-center z-10 shadow-lg border border-blue-400">
+                                        <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-2m2 0H9m2 0H5m2 0H3m2 0v-5a1 1 0 011-1h8a1 1 0 011 1v5m-6 0h4" />
+                                        </svg>
+                                    </div>
 
-                            {/* Content */}
-                            <div className="border-l-4 border-blue-200 pl-6 md:pl-8 py-2">
-                                <h3 className="text-xl font-bold text-gray-800 mb-1">Founder & Managing Director</h3>
-                                <p className="text-lg text-blue-700 font-semibold mb-2">Eminent Infradevelopers Pvt Ltd</p>
-                                <div className="text-gray-500 text-sm font-mono mb-4">CIN: U45201DL2003PTC122964</div>
+                                    {/* Content */}
+                                    <div className="md:w-1/2 md:pr-10 ml-10 md:ml-0 md:text-right">
+                                        {/* Year for mobile */}
+                                        <div className="md:hidden mb-3">
+                                            <div className="bg-blue-800 text-blue-100 text-sm font-semibold px-3 py-1 rounded-full inline-block border border-blue-700">
+                                                2003 - Present
+                                            </div>
+                                        </div>
 
-                                <p className="text-gray-600 mb-4 leading-relaxed">
-                                    A consortium of leading builders & developers of New Delhi, committed to cater to every section of Society with quality infrastructure.
-                                </p>
+                                        <div className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-6 border border-gray-700/50 shadow-sm hover:shadow-md transition-shadow">
+                                            <h3 className="text-xl font-bold text-white mb-1">Founder & Managing Director</h3>
+                                            <p className="text-lg text-blue-300 font-semibold mb-2">Eminent Infradevelopers Pvt Ltd</p>
+                                            <div className="text-gray-400 text-xs font-mono mb-4 tracking-tight">CIN: U45201DL2003PTC122964</div>
 
-                                <div className="mb-4">
-                                    <h4 className="text-sm font-semibold text-gray-700 mb-2 uppercase tracking-wide">Focus Areas</h4>
-                                    <ul className="space-y-1">
-                                        <li className="flex items-start">
-                                            <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-2"></div>
-                                            <span className="text-gray-700">Townships</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-2"></div>
-                                            <span className="text-gray-700">Apartments</span>
-                                        </li>
-                                        <li className="flex items-start">
-                                            <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-2 mr-2"></div>
-                                            <span className="text-gray-700">Malls and Multiplexes</span>
-                                        </li>
-                                    </ul>
+                                            <p className="text-gray-300 mb-4 leading-relaxed text-sm">
+                                                A consortium of leading builders & developers of New Delhi, committed to cater to every section of Society with quality infrastructure.
+                                            </p>
+
+                                            <div className="mb-4">
+                                                <h4 className="text-xs font-semibold text-blue-300 mb-2 uppercase tracking-wider">Focus Areas</h4>
+                                                <ul className="space-y-1.5">
+                                                    <li className="flex items-start">
+                                                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
+                                                        <span className="text-gray-300 text-sm">Townships</span>
+                                                    </li>
+                                                    <li className="flex items-start">
+                                                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
+                                                        <span className="text-gray-300 text-sm">Apartments</span>
+                                                    </li>
+                                                    <li className="flex items-start">
+                                                        <div className="w-1.5 h-1.5 bg-blue-500 rounded-full mt-1.5 mr-2 flex-shrink-0"></div>
+                                                        <span className="text-gray-300 text-sm">Malls and Multiplexes</span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Timeline Icon (Right for desktop) */}
+                                    <div className="hidden md:flex md:w-1/2 md:pl-10 md:justify-start">
+                                        <div className="relative">
+                                            <div className="absolute -left-11 top-1 w-10 h-10 bg-blue-600 rounded-full flex items-center justify-center z-10 shadow-lg border border-blue-400">
+                                                <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-2m2 0H9m2 0H5m2 0H3m2 0v-5a1 1 0 011-1h8a1 1 0 011 1v5m-6 0h4" />
+                                                </svg>
+                                            </div>
+                                            <div className="text-left mt-2 ml-2">
+                                                <div className="bg-blue-800 text-blue-100 text-sm font-semibold px-3 py-1 rounded-full inline-block border border-blue-700">
+                                                    2003 - Present
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </motion.div>
+                            </motion.div>
+                        </div>
 
                         {/* Stats Section */}
                         <motion.div
@@ -211,30 +275,28 @@ export default function About() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.7, delay: 0.4 }}
                             viewport={{ once: true }}
-                            className="bg-blue-50 rounded-lg p-6 border border-blue-100"
+                            className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50 shadow-sm mt-8"
                         >
-                            <h3 className="text-xl font-bold text-center text-gray-800 mb-6">Career Highlights</h3>
+                            <h3 className="text-xl font-bold text-center text-white mb-6">Career Highlights</h3>
 
-                            <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-center">
-                                <div>
-                                    <div className="text-2xl md:text-3xl font-bold text-blue-700 mb-1">20+</div>
-                                    <div className="text-sm text-gray-600">Years Experience</div>
+                            <div className="grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+                                <div className="p-4 rounded-lg bg-gray-700/50 border border-gray-600">
+                                    <div className="text-2xl md:text-3xl font-bold text-blue-300 mb-1">20+</div>
+                                    <div className="text-xs text-gray-300 uppercase tracking-wide">Years Experience</div>
                                 </div>
-                                <div>
-                                    <div className="text-2xl md:text-3xl font-bold text-blue-700 mb-1">50+</div>
-                                    <div className="text-sm text-gray-600">Projects</div>
+                                <div className="p-4 rounded-lg bg-gray-700/50 border border-gray-600">
+                                    <div className="text-2xl md:text-3xl font-bold text-blue-300 mb-1">50+</div>
+                                    <div className="text-xs text-gray-300 uppercase tracking-wide">Projects</div>
                                 </div>
-                                <div>
-                                    <div className="text-2xl md:text-3xl font-bold text-blue-700 mb-1">10K+</div>
-                                    <div className="text-sm text-gray-600">Customers</div>
+                                <div className="p-4 rounded-lg bg-gray-700/50 border border-gray-600">
+                                    <div className="text-2xl md:text-3xl font-bold text-blue-300 mb-1">10K+</div>
+                                    <div className="text-xs text-gray-300 uppercase tracking-wide">Customers</div>
                                 </div>
-                                <div>
-                                    <div className="text-2xl md:text-3xl font-bold text-blue-700 mb-1">5+</div>
-                                    <div className="text-sm text-gray-600">Cities</div>
+                                <div className="p-4 rounded-lg bg-gray-700/50 border border-gray-600">
+                                    <div className="text-2xl md:text-3xl font-bold text-blue-300 mb-1">5+</div>
+                                    <div className="text-xs text-gray-300 uppercase tracking-wide">Cities</div>
                                 </div>
                             </div>
-
-                           
                         </motion.div>
                     </div>
                 </div>
