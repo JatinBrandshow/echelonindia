@@ -4,7 +4,7 @@
 import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 
-export default function Leadership() {
+export default function About() {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [activeSection, setActiveSection] = useState('hero');
 
