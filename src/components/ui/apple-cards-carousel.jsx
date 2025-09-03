@@ -174,7 +174,7 @@ export const Card = ({
         <>
             <AnimatePresence>
                 {open && (
-                    <div className="fixed inset-0 z-[1000] h-screen overflow-auto">
+                    <div className="fixed inset-0 z-[1000] h-screen overflow-auto"  data-lenis-prevent>
                         <motion.div
                             initial={{ opacity: 0 }}
                             animate={{ opacity: 1 }}
@@ -195,7 +195,7 @@ export const Card = ({
                             <motion.p
                                 layoutId={layout ? `category-${card.title}` : undefined}
                                 className="text-base font-medium text-black dark:text-white">
-                                {/* {card.category} */}
+                                {card.category}
                             </motion.p>
                             <motion.p
                                 layoutId={layout ? `title-${card.title}` : undefined}
@@ -216,12 +216,12 @@ export const Card = ({
                 <div className="relative z-40 p-4 md:p-8">
                     <motion.p
                         layoutId={layout ? `category-${card.category}` : undefined}
-                        className="text-left font-sans text-xs font-medium text-gray-300 md:text-base">
+                        className="text-left font-sans text-xs font-medium text-gray-300 md:text-sm">
                         {card.category}
                     </motion.p>
                     <motion.p
                         layoutId={layout ? `title-${card.title}` : undefined}
-                        className="mt-2 max-w-xs text-left font-sans text-lg leading-snug font-semibold [text-wrap:balance] text-white md:text-3xl">
+                        className="mt-2 max-w-xs text-left font-sans text-lg leading-6 font-semibold [text-wrap:balance] text-white md:text-xl">
                         {card.title}
                     </motion.p>
                 </div>

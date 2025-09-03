@@ -12,6 +12,7 @@ export default function SmoothScroll() {
             gestureDirection: "vertical",
             smooth: true,
             smoothTouch: false,
+            syncTouch: true,
         });
 
         function raf(time) {
