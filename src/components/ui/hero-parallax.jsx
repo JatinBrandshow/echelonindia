@@ -60,19 +60,18 @@ export const HeroParallax = ({
 
 export const Header = () => {
     return (
-       <div
-  className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full left-0 top-0"
->
-  <h1 className="text-2xl md:text-7xl font-medium text-black">
-    Building Homes, <br /> Creating Communities
-  </h1>
-   <p className="max-w-2xl text-base md:text-xl mt-8 text-gray-600">
-    We create world-class townships, apartments, and commercial spaces 
-    designed for modern living. With decades of experience, our mission 
-    is to deliver quality, innovation, and trust in every project.
-  </p>
-</div>
-
+        <div
+            className="max-w-7xl relative mx-auto px-4 py-40 w-full left-0 top-0"
+        >
+            <h1 className="text-5xl md:text-7xl font-medium text-black">
+                Building Homes, <br /> Creating Communities
+            </h1>
+            <p className="max-w-2xl text-base md:text-xl mt-8 text-gray-600">
+                We create world-class townships, apartments, and commercial spaces
+                designed for modern living. With decades of experience, our mission
+                is to deliver quality, innovation, and trust in every project.
+            </p>
+        </div>
     );
 };
 
