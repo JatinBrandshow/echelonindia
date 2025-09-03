@@ -33,8 +33,9 @@ export default function Leadership() {
             title: "Founder & Managing Director",
             period: "1989 - Present",
             cin: "U74899DL1989PTC037477",
-            description: "Leading real estate group of India, aiming to provide living in a spiritual and healthy environment backed by a commitment to excellence and quality.",
+            description: "Dynamic Group, managed by highly qualified multi-disciplinary professionals, is a leading real estate group of India, aiming to provide living in a spiritual and healthy environment which is backed by a commitment to excellence and quality.",
             focusAreas: ["Housing Societies", "Townships", "Apartments in Northern India"],
+            achievements: ["50+ successful projects", "10,000+ satisfied customers", "5+ cities expansion"],
             icon: (
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
@@ -47,8 +48,9 @@ export default function Leadership() {
             title: "Founder & Managing Director",
             period: "2003 - Present",
             cin: "U45201DL2003PTC122964",
-            description: "A consortium of leading builders & developers of New Delhi, committed to cater to every section of Society with quality infrastructure.",
+            description: "A consortium of leading builders & developers of New Delhi, conceived, nurtured and led by Mr. Manish Agarwal. The Group is committed to cater to every section of Society with quality infrastructure at optimized resources.",
             focusAreas: ["Townships", "Apartments", "Malls and Multiplexes"],
+            achievements: ["20+ commercial projects", "5 major townships", "3 shopping malls"],
             icon: (
                 <svg className="w-5 h-5 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-2m2 0H9m2 0H5m2 0H3m2 0v-5a1 1 0 011-1h8a1 1 0 011 1v5m-6 0h4" />
@@ -59,15 +61,13 @@ export default function Leadership() {
 
     const stats = [
         { value: "20+", label: "Years Experience" },
-        { value: "50+", label: "Projects" },
-        { value: "10K+", label: "Customers" },
-        { value: "5+", label: "Cities" }
+        { value: "50+", label: "Projects Completed" },
+        { value: "10K+", label: "Satisfied Customers" },
+        { value: "5+", label: "Cities Presence" }
     ];
 
     return (
         <div className="min-h-screen bg-gray-50">
-
-
             {/* Hero Section */}
             <section id="hero" className="hero-bg min-h-screen flex items-center pt-16 pb-28">
                 <div className="container mx-auto px-6 text-center text-white">
@@ -84,7 +84,7 @@ export default function Leadership() {
             {/* About Section */}
             <section id="about" className="py-20 bg-white">
                 <div className="container mx-auto px-6">
-                    <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">About </h2>
+                    <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">About</h2>
                     <div className="flex flex-col md:flex-row items-center">
                         <div className="md:w-1/3 mb-10 md:mb-0 flex justify-center">
                             <div className="w-64 h-64 bg-blue-100 rounded-full overflow-hidden shadow-xl">
@@ -155,7 +155,7 @@ export default function Leadership() {
                         viewport={{ once: true }}
                         className="text-3xl md:text-4xl font-bold text-center mb-12 text-white"
                     >
-                        Professional <span className="text-blue-400">Journey</span>
+                        Leadership & <span className="text-blue-400">Ownership</span>
                     </motion.h2>
 
                     <div className="max-w-6xl mx-auto">
@@ -214,7 +214,7 @@ export default function Leadership() {
                             initial={{ opacity: 0, y: 20 }}
                             animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
-                            className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50 shadow-lg mb-12"
+                            className="bg-gray-800/80 backdrop-blur-sm rounded-xl p-8 border border-gray-700/50 shadow-lg mb-8"
                         >
                             <div className="flex items-start mb-6">
                                 <div className="bg-blue-600 rounded-lg p-3 mr-4 flex-shrink-0">
@@ -251,6 +251,17 @@ export default function Leadership() {
                                         </span>
                                     ))}
                                 </div>
+                            </div>
+                            
+                            <div>
+                                <h4 className="text-sm font-semibold text-blue-300 mb-3 uppercase tracking-wider">
+                                    Key Achievements
+                                </h4>
+                                <ul className="text-gray-300 text-sm list-disc pl-5 space-y-1">
+                                    {companies[activeCompany].achievements.map((achievement, index) => (
+                                        <li key={index}>{achievement}</li>
+                                    ))}
+                                </ul>
                             </div>
                         </motion.div>
 
@@ -294,7 +305,7 @@ export default function Leadership() {
                         viewport={{ once: true }}
                         className="text-3xl md:text-4xl font-bold text-center mb-16"
                     >
-                        <span className="text-blue-600">Companies</span>
+                        Companies <span className="text-blue-600">Overview</span>
                     </motion.h2>
 
                     <div className="grid md:grid-cols-2 gap-10">
@@ -371,21 +382,30 @@ export default function Leadership() {
                                     className="text-gray-700 mb-4 leading-relaxed"
                                     style={{ transform: 'translateZ(10px)' }}
                                 >
-                                    Leading real estate group of India, aiming to provide living in a spiritual and healthy environment backed by a commitment to excellence and quality.
+                                    Dynamic Group, managed by highly qualified multi-disciplinary professionals, is a leading real estate group of India, aiming to provide living in a spiritual and healthy environment.
                                 </p>
                                 <div className="mb-4" style={{ transform: 'translateZ(15px)' }}>
+                                    <h4 className="font-semibold text-gray-800 mb-2">Specializations:</h4>
                                     <div className="flex items-center mb-2">
                                         <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
-                                        <span className="text-gray-800 font-medium">Housing societies</span>
+                                        <span className="text-gray-800">Housing societies development</span>
                                     </div>
                                     <div className="flex items-center mb-2">
                                         <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
-                                        <span className="text-gray-800 font-medium">Townships</span>
+                                        <span className="text-gray-800">Integrated townships</span>
                                     </div>
                                     <div className="flex items-center">
                                         <div className="w-2 h-2 bg-blue-600 rounded-full mr-2"></div>
-                                        <span className="text-gray-800 font-medium">Apartments in northern India</span>
+                                        <span className="text-gray-800">Premium apartments in northern India</span>
                                     </div>
+                                </div>
+                                <div className="mb-4" style={{ transform: 'translateZ(15px)' }}>
+                                    <h4 className="font-semibold text-gray-800 mb-2">Notable Achievements:</h4>
+                                    <ul className="text-sm text-gray-700 list-disc pl-5">
+                                        <li>50+ successful residential projects</li>
+                                        <li>10,000+ satisfied customers</li>
+                                        <li>Presence in 5+ major cities</li>
+                                    </ul>
                                 </div>
                                 <motion.button
                                     className="mt-4 text-blue-600 hover:text-blue-800 font-semibold flex items-center group"
@@ -477,21 +497,30 @@ export default function Leadership() {
                                     className="text-gray-700 mb-4 leading-relaxed"
                                     style={{ transform: 'translateZ(10px)' }}
                                 >
-                                    A consortium of leading builders & developers of New Delhi, committed to cater to every section of Society.
+                                    A consortium of leading builders & developers of New Delhi, committed to cater to every section of Society with optimized resource utilization and quality infrastructure.
                                 </p>
                                 <div className="mb-4" style={{ transform: 'translateZ(15px)' }}>
+                                    <h4 className="font-semibold text-gray-800 mb-2">Specializations:</h4>
                                     <div className="flex items-center mb-2">
                                         <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
-                                        <span className="text-gray-800 font-medium">Townships</span>
+                                        <span className="text-gray-800">Integrated townships</span>
                                     </div>
                                     <div className="flex items-center mb-2">
                                         <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
-                                        <span className="text-gray-800 font-medium">Apartments</span>
+                                        <span className="text-gray-800">Luxury apartments</span>
                                     </div>
                                     <div className="flex items-center">
                                         <div className="w-2 h-2 bg-blue-500 rounded-full mr-2"></div>
-                                        <span className="text-gray-800 font-medium">Malls and multiplexes</span>
+                                        <span className="text-gray-800">Commercial malls and multiplexes</span>
                                     </div>
+                                </div>
+                                <div className="mb-4" style={{ transform: 'translateZ(15px)' }}>
+                                    <h4 className="font-semibold text-gray-800 mb-2">Notable Achievements:</h4>
+                                    <ul className="text-sm text-gray-700 list-disc pl-5">
+                                        <li>20+ commercial projects</li>
+                                        <li>5 major township developments</li>
+                                        <li>3 shopping malls operational</li>
+                                    </ul>
                                 </div>
                                 <motion.button
                                     className="mt-4 text-blue-600 hover:text-blue-800 font-semibold flex items-center group"
@@ -513,68 +542,67 @@ export default function Leadership() {
                 </div>
             </section>
 
-
             <style jsx>{`
-        .hero-bg {
-          background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3') center/cover;
-        }
-        .company-card {
-          transition: transform 0.3s ease;
-        }
-        .company-card:hover {
-          transform: translateY(-5px);
-        }
-        .timeline-item {
-          position: relative;
-          padding-left: 30px;
-          margin-bottom: 40px;
-        }
-        .timeline-item:before {
-          content: '';
-          position: absolute;
-          left: 0;
-          top: 8px;
-          width: 12px;
-          height: 12px;
-          border-radius: 50%;
-          background: #2563eb;
-        }
-        .timeline-item:after {
-          content: '';
-          position: absolute;
-          left: 5px;
-          top: 25px;
-          width: 2px;
-          height: calc(100% + 15px);
-          background: #2563eb;
-        }
-        .timeline-item:last-child:after {
-          display: none;
-        }
-        .animate-fade-in {
-          animation: fadeIn 1s ease forwards;
-          opacity: 0;
-        }
-        .delay-200 {
-          animation-delay: 0.2s;
-        }
-        .delay-400 {
-          animation-delay: 0.4s;
-        }
-        .delay-600 {
-          animation-delay: 0.6s;
-        }
-        @keyframes fadeIn {
-          from {
-            opacity: 0;
-            transform: translateY(20px);
-          }
-          to {
-            opacity: 1;
-            transform: translateY(0);
-          }
-        }
-      `}</style>
+                .hero-bg {
+                    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('https://images.unsplash.com/photo-1582407947304-fd86f028f716?ixlib=rb-4.0.3') center/cover;
+                }
+                .company-card {
+                    transition: transform 0.3s ease;
+                }
+                .company-card:hover {
+                    transform: translateY(-5px);
+                }
+                .timeline-item {
+                    position: relative;
+                    padding-left: 30px;
+                    margin-bottom: 40px;
+                }
+                .timeline-item:before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 8px;
+                    width: 12px;
+                    height: 12px;
+                    border-radius: 50%;
+                    background: #2563eb;
+                }
+                .timeline-item:after {
+                    content: '';
+                    position: absolute;
+                    left: 5px;
+                    top: 25px;
+                    width: 2px;
+                    height: calc(100% + 15px);
+                    background: #2563eb;
+                }
+                .timeline-item:last-child:after {
+                    display: none;
+                }
+                .animate-fade-in {
+                    animation: fadeIn 1s ease forwards;
+                    opacity: 0;
+                }
+                .delay-200 {
+                    animation-delay: 0.2s;
+                }
+                .delay-400 {
+                    animation-delay: 0.4s;
+                }
+                .delay-600 {
+                    animation-delay: 0.6s;
+                }
+                @keyframes fadeIn {
+                    from {
+                        opacity: 0;
+                        transform: translateY(20px);
+                    }
+                    to {
+                        opacity: 1;
+                        transform: translateY(0);
+                    }
+                }
+            `}</style>
         </div>
     );
 }
