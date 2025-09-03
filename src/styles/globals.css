@@ -1,5 +1,20 @@
 @import "tailwindcss";
 
+@font-face {
+    font-family: "Cursive";
+    src: url("../fonts/cursive.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 body {
     font-family: var(--font-work-sans), sans-serif;
+}
+
+
+@layer utilities {
+    .font-cursive {
+        font-family: "Cursive", cursive;
+    }
 }
