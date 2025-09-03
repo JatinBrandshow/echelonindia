@@ -26,10 +26,10 @@ export function Header() {
       name: "Leadership",
       link: "/our-leader",
     },
-    {
-      name: "Blogs",
-      link: "/blogs",
-    },
+    // {
+    //   name: "Blogs",
+    //   link: "/blogs",
+    // },
     {
       name: "Schedule a site visit",
       link: "/contact",
