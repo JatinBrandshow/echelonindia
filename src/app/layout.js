@@ -1,6 +1,7 @@
 import { Work_Sans } from "next/font/google";
 import "../styles/globals.css";
 import { Header } from "@/components/Header";
+import { Footer } from "@/components/Footer";
 import SmoothScroll from "@/components/SmoothScroll";
 
 const workSans = Work_Sans({
@@ -21,6 +22,7 @@ export default function RootLayout({ children }) {
         <Header />
         <SmoothScroll />
         {children}
+        <Footer />
       </body>
     </html>
   );
