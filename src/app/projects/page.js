@@ -3,41 +3,89 @@ import React from 'react'
 
 const projects = [
     {
-        site: "kumarawilcoxon.com",
-        title: "Kumara Wilcoxon",
+        site: "emeraldresidency.com",
+        title: "Emerald Residency",
         description:
-            "With over $1.3 Billion in sales, Kumara Wilcoxon is one of Austin’s top luxury real estate agents. Kumara’s website reflects her distinguished and elevated brand. With subtle brand elements, a warm color palette, and plenty of video content, the website has an ultra-high-end look while still being inviting.",
+            "Eminent Emerald Residency in Dayal Bagh, Agra is a ready-to-move housing society. This project is a perfect combination of comfort and style, specifically designed to suit your requirements and conveniences. A Group Housing Residential Scheme having Ground + 12 Floors. With a fine elevation and all modern-day amenities at your disposal.",
         image:
-            "https://cdn-gdalb.nitrocdn.com/LKErezJcAyurKLBNOppXfGJVQQbZsRzg/assets/images/optimized/rev-2e7ef09/www.luxurypresence.com/wp-content/uploads/2022/12/4-kumara-wilcoxon-1200x720.jpg",
+            "/images/building14.png",
         buttonText: "Show more",
     },
     {
-        site: "kumarawilcoxon.com",
-        title: "Kumara Wilcoxon",
+        site: "emeraldsquare.com",
+        title: "Emerald Square",
         description:
-            "With over $1.3 Billion in sales, Kumara Wilcoxon is one of Austin’s top luxury real estate agents. Kumara’s website reflects her distinguished and elevated brand. With subtle brand elements, a warm color palette, and plenty of video content, the website has an ultra-high-end look while still being inviting.",
+            "Located in one of the posh areas of Agra, Emerald Square is a luxury apartment complex with swimming pool, spa, gymnasium, sports room, and two-level basement parking. This was the first project in Uttar Pradesh to get two-level basement parking through Government order. Ground plus Seven floors with a total area of around 1,44,000 sq. ft.",
         image:
-            "https://cdn-gdalb.nitrocdn.com/LKErezJcAyurKLBNOppXfGJVQQbZsRzg/assets/images/optimized/rev-2e7ef09/www.luxurypresence.com/wp-content/uploads/2022/12/4-kumara-wilcoxon-1200x720.jpg",
+            "/images/building13.png",
         buttonText: "Show more",
     },
     {
-        site: "kumarawilcoxon.com",
-        title: "Kumara Wilcoxon",
+        site: "citymallsonepat.com",
+        title: "City Mall Sonipat",
         description:
-            "With over $1.3 Billion in sales, Kumara Wilcoxon is one of Austin’s top luxury real estate agents. Kumara’s website reflects her distinguished and elevated brand. With subtle brand elements, a warm color palette, and plenty of video content, the website has an ultra-high-end look while still being inviting.",
+            "Eminent's City Mall is strategically located in the heart of Sonepat City on Baba Tarana Road. The mall is 1.2 acres big with 1,50,000 sq. ft of built-up area accommodating top-notch brands including Big Bazaar, Pantaloons, KFC etc and three multiplexes with food courts. It was Sonepat's first mall with shopping and entertainment under one roof.",
         image:
-            "https://cdn-gdalb.nitrocdn.com/LKErezJcAyurKLBNOppXfGJVQQbZsRzg/assets/images/optimized/rev-2e7ef09/www.luxurypresence.com/wp-content/uploads/2022/12/4-kumara-wilcoxon-1200x720.jpg",
+            "/images/building12.png",
         buttonText: "Show more",
     },
     {
-        site: "kumarawilcoxon.com",
-        title: "Kumara Wilcoxon",
+        site: "aarogyamharidwar.com",
+        title: "Aarogyam Haridwar",
         description:
-            "With over $1.3 Billion in sales, Kumara Wilcoxon is one of Austin’s top luxury real estate agents. Kumara’s website reflects her distinguished and elevated brand. With subtle brand elements, a warm color palette, and plenty of video content, the website has an ultra-high-end look while still being inviting.",
+            "Aarogyam is a grand creation inspired from life that's truly a blessing. It is a fusion between the material comforts of the West and the spiritual well being of the East. With a world-class Yog, Ayurvedic spa, health and wellness club within the complex. Spread over an area of 19 acres, Eminent Aarogyam is one of the spacious housing societies in the Haridwar region.",
         image:
-            "https://cdn-gdalb.nitrocdn.com/LKErezJcAyurKLBNOppXfGJVQQbZsRzg/assets/images/optimized/rev-2e7ef09/www.luxurypresence.com/wp-content/uploads/2022/12/4-kumara-wilcoxon-1200x720.jpg",
+            "/images/building11.png",
         buttonText: "Show more",
     },
+    {
+        site: "gulmoharagra.com",
+        title: "Gulmohar",
+        description: "Located in Phase 2 Taj Nagri, Agra, the Dynamic Gulmohar is a thoughtfully planned residential complex equipped with all amenities for a comfortable living. The Project is completed and delivered. A Group Housing Residential Scheme having Ground + 2 Floors.",
+        image: "/images/building10.png",
+        buttonText: "Show more",
+    },
+    {
+        site: "gardencityludhiana.com",
+        title: "Garden City Ludhiana",
+        description: "Garden City is one of the most premium Townships of Ludhiana. Comprising a total area of 50 acres, 31 acres is residential, 1.5 acres is commercial, 1.7 acres is park and recreational area, 0.60 acres is Institutional and remaining is roads and parking.",
+        image:
+            "/images/building8.jpeg",
+        buttonText: "Show more",
+    },
+    {
+        site: "commercialnoida.com",
+        title: "Commercial Building Noida",
+        description: "Situated in the IT and Commercial hub of Noida, this building provides commercial office space. It has modern and elegant elevation with its architecture crafted by experienced firms. It has double height basement parking with 9 floors of elevation. It also comprises of service floor and refuge areas.",
+        image:
+            "/images/building1.jpeg",
+        buttonText: "Show more",
+    },
+    {
+        site: "tulsiresidency.com",
+        title: "Tulsi Residency",
+        description: "Tulsi Residency is one of the most premium Townships of Govardhan, Mathura. It is spread over an area of 17 acres of which 10 acres is residential, 0.75 acres is commercial, 2.5 acres is park and recreational area and remaining is community area and roads.",
+        image:
+            "/images/building3.jpeg",
+
+        buttonText: "Show more",
+    },
+    {
+        site: "mangalheights.com",
+        title: "Mangal Heights",
+        description: "A marvel rising bang in the heart of Raj Nagar Extension Ghaziabad. It consists of a 100 rooms luxurious Hotel, 20 Duplex Commercial Space, Banquet Halls and 50 fully furnished Service Apartments. It also comprises of triple floor Basement parking facility. Constructed with world class architectural design and superior technology.",
+        image:
+            "/images/building15.png",
+        buttonText: "Show more",
+    },
+    {
+        site: "gardencityrudrapur.com",
+        title: "Garden City Rudrapur",
+        description: "Situated on NH-74, Garden City is one of the most premium Townships of Rudrapur. Comprising of total area of 65 acres, 45 acres has been completed and delivered, which consists of 1.4 acres of commercial area, 1.2 acres of Institutional area and remaining is recreational areas, parks, roads and residential plots.",
+        image:
+            "/images/building2.png",
+        buttonText: "Show more",
+    }
 ]
 
 const Projects = () => {
@@ -58,7 +106,7 @@ const Projects = () => {
                             {isEven && (
                                 <div className="col-span-5 md:col-span-3 my-auto max-md:h-full max-lg:h-64 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-200 ease-in-out">
                                     <Image
-                                        className="h-full w-full object-cover"
+                                        className="h-96 w-full object-cover"
                                         src={project.image}
                                         height={1280}
                                         width={1280}
@@ -90,7 +138,7 @@ const Projects = () => {
                             {!isEven && (
                                 <div className="col-span-5 md:col-span-3 my-auto max-md:h-full max-lg:h-64 rounded-2xl overflow-hidden hover:scale-105 transition-all duration-200 ease-in-out">
                                     <Image
-                                        className="h-full w-full object-cover"
+                                        className="h-96 w-full object-cover"
                                         src={project.image}
                                         height={1280}
                                         width={1280}
