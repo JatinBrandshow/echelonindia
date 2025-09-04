@@ -113,20 +113,6 @@ export default function Contact() {
                                 Send Message
                             </button>
                         </motion.div>
-
-                        {/* Scroll Indicator */}
-                        <motion.div
-                            initial={{ opacity: 0 }}
-                            animate={{ opacity: 1 }}
-                            transition={{ delay: 1.2 }}
-                            className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-                        >
-                            <div className="animate-bounce">
-                                <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 14l-7 7m0 0l-7-7m7 7V3" />
-                                </svg>
-                            </div>
-                        </motion.div>
                     </motion.div>
                 </div>
 
@@ -139,7 +125,7 @@ export default function Contact() {
             </section>
 
             {/* Contact Content */}
-            <section className="py-20 relative bg-gradient-to-b from-navy-50 to-gray-50">
+            <section className="py-20 relative bg-white">
                 <div className="container mx-auto px-4 md:px-8">
                     <motion.div
                         initial={{ opacity: 0, y: 30 }}
@@ -163,9 +149,9 @@ export default function Contact() {
                             viewport={{ once: true }}
                             className="lg:w-1/2"
                         >
-                            <div className="bg-white rounded-2xl shadow-lg p-8 md:p-10 border border-gray-100">
-                                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-navy-900">Send us a Message</h2>
-                                <p className="text-gray-600 mb-8">
+                            <div className="bg-white rounded-2xl drop-shadow-2xl p-8 md:p-10 border border-gray-200 h-full">
+                                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-navy-900 tracking-tighter text-center">Send us a Message</h2>
+                                <p className="text-gray-600 mb-8 mx-auto text-center max-w-sm">
                                     Fill out the form below and our team will get back to you within 24 hours.
                                 </p>
 
@@ -183,7 +169,7 @@ export default function Contact() {
                                     </motion.div>
                                 ) : (
                                     <form onSubmit={handleSubmit} className="space-y-6">
-                                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                                        <div className="grid grid-cols-1 gap-6">
                                             <div>
                                                 <label htmlFor="name" className="block text-sm font-medium text-navy-700 mb-2">
                                                     Full Name *
@@ -395,16 +381,16 @@ export default function Contact() {
             </section>
 
             {/* Map Section */}
-            <section className="py-16 bg-gray-50">
+            <section className="py-16 bg-gray-100">
                 <div className="container mx-auto px-6">
                     <motion.div
                         initial={{ opacity: 0, y: 20 }}
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.7 }}
                         viewport={{ once: true }}
-                        className="bg-white rounded-2xl shadow-xl overflow-hidden"
+                        className="bg-white rounded-2xl drop-shadow-xl border border-gray-300 overflow-hidden"
                     >
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 p-6 pb-0">Find Us Here</h2>
+                        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 text-center p-6">Find Us Here</h2>
                         <div className="h-96 w-full">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.107842302205!2d77.206532!3d28.632485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1684832540725!5m2!1sen!2sin"

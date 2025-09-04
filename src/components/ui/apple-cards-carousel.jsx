@@ -47,13 +47,13 @@ export const Carousel = ({
 
     const scrollLeft = () => {
         if (carouselRef.current) {
-            carouselRef.current.scrollBy({ left: -300, behavior: "smooth" });
+            carouselRef.current.scrollBy({ left: -340, behavior: "smooth" });
         }
     };
 
     const scrollRight = () => {
         if (carouselRef.current) {
-            carouselRef.current.scrollBy({ left: 300, behavior: "smooth" });
+            carouselRef.current.scrollBy({ left: 340, behavior: "smooth" });
         }
     };
 
@@ -88,7 +88,6 @@ export const Carousel = ({
                     <div
                         className={cn(
                             "flex flex-row justify-start gap-4 pl-4",
-                        
                             
                         )}>
                         {items.map((item, index) => (
@@ -192,15 +191,15 @@ export const Card = ({
                                 onClick={handleClose}>
                                 <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
                             </button>
-                            <motion.p
+                            {/* <motion.p
                                 layoutId={layout ? `category-${card.title}` : undefined}
                                 className="text-base font-medium text-black dark:text-white">
                                 {card.category}
-                            </motion.p>
+                            </motion.p> */}
                             <motion.p
                                 layoutId={layout ? `title-${card.title}` : undefined}
-                                className="mt-4 text-2xl font-semibold text-neutral-700 md:text-5xl dark:text-white">
-                                {card.title}
+                                className="mt-4 text-2xl text-center font-semibold md:text-4xl text-white">
+                                PLANS
                             </motion.p>
                             <div className="py-10">{card.content}</div>
                         </motion.div>
@@ -210,7 +209,7 @@ export const Card = ({
             <motion.button
                 layoutId={layout ? `card-${card.title}` : undefined}
                 onClick={handleOpen}
-                className="relative z-10 flex h-80 w-56 flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 md:h-[32rem] md:w-96 dark:bg-neutral-900">
+                className="relative z-10 flex flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 h-[30rem] w-80 dark:bg-neutral-900">
                 <div
                     className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/90 via-black/10 to-transparent" />
                 <div className="relative z-40 p-4 md:p-8">
