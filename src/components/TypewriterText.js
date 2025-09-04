@@ -20,7 +20,7 @@ export function TypewriterText() {
         },
     ];
     return (
-        <div className="flex flex-col items-center justify-center h-full py-6  ">
+        <div className="flex flex-col items-center justify-center h-full mb-16">
             <p className="text-gray-600 text-xs sm:text-base  ">
                 Turning your dream of a perfect home into reality
             </p>

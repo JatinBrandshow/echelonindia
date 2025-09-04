@@ -22,7 +22,7 @@ export function PlansCarousel() {
         },
     ];
     return (
-        <div className="relative overflow-hidden w-full h-full pb-16 ">
+        <div className="relative overflow-hidden w-full h-full py-16 ">
             <Heading heading="Plans" />
             <Carousel slides={slideData} />
         </div>

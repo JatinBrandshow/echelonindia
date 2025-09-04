@@ -41,7 +41,7 @@ export function Testimonials() {
   ];
 
   return (
-    <section className="py-10 sm:py-20">
+    <section className="bg-gray-100 py-10 my-10 md:my-20">
       <Heading heading="Testimonials" />
       <AnimatedTestimonials testimonials={testimonials} />;
     </section>

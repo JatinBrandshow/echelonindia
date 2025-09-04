@@ -11,9 +11,9 @@ const HomePage = () => {
         <>
             <HeroSection />
             <AppleCarousel />
+            <SVGMaskEffect />
             <PlansCarousel />
             <Testimonials />
-            <SVGMaskEffect />
             <TypewriterText />
         </>
     )

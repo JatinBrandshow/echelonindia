@@ -39,7 +39,7 @@ export const MaskContainer = ({
                 backgroundColor: { duration: 0.3 },
             }}>
             <motion.div
-                className="absolute flex h-full w-full items-center justify-center bg-black text-6xl [mask-image:url(/svg/mask.svg)] [mask-repeat:no-repeat] [mask-size:40px] dark:bg-white"
+                className="absolute flex h-full w-full items-center justify-center text-6xl [mask-image:url(/svg/mask.svg)] [mask-repeat:no-repeat] [mask-size:40px] bg-white"
                 animate={{
                     maskPosition: `${mousePosition.x - maskSize / 2}px ${mousePosition.y - maskSize / 2
                         }px`,
@@ -50,7 +50,7 @@ export const MaskContainer = ({
                     maskPosition: { duration: 0.15, ease: "linear" },
                 }}>
                 <div
-                    className="absolute inset-0 z-0 h-full w-full bg-black opacity-50 dark:bg-white" />
+                    className="absolute inset-0 z-0 h-full w-full opacity-50 bg-white" />
                 <div
                     onMouseEnter={() => {
                         setIsHovered(true);
