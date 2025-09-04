@@ -3,6 +3,7 @@
 
 import { motion } from 'framer-motion';
 import { useEffect, useState } from 'react';
+import Image from 'next/image';
 
 export default function About() {
     const [isVisible, setIsVisible] = useState(false);
@@ -13,8 +14,8 @@ export default function About() {
 
     return (
         <div className="min-h-screen bg-gray-50">
-            {/*  Hero Section with Aceternity UI Inspiration */}
-            <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900">
+            {/* About Page Hero Section */}
+            <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900 pt-20">
                 {/* Animated gradient background */}
                 <div className="absolute inset-0 bg-gradient-to-br from-blue-900 via-gray-900 to-purple-900 opacity-90"></div>
 
@@ -30,7 +31,7 @@ export default function About() {
                 {/* Main content */}
                 <div className="container mx-auto px-6 relative z-10">
                     <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
-                        {/* Text content */}
+                        {/* Text content - About focused */}
                         <motion.div
                             initial={{ opacity: 0, x: -50 }}
                             animate={{ opacity: 1, x: 0 }}
@@ -45,7 +46,7 @@ export default function About() {
                             >
                                 <div className="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md rounded-full px-4 py-2 text-sm text-white mb-6 border border-white/20">
                                     <span className="w-2 h-2 bg-green-400 rounded-full animate-pulse"></span>
-                                    <span>20+ Years of Excellence in Real Estate</span>
+                                    <span>Building Legacies Since 1989</span>
                                 </div>
                             </motion.div>
 
@@ -53,37 +54,42 @@ export default function About() {
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.7, delay: 0.3 }}
-                                className="text-4xl md:text-6xl font-cursive font-semibold mb-6 text-white"
+                                className="text-4xl md:text-5xl font-bold mb-6 text-white"
                             >
-                                Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Tomorrow's</span> Landmarks
+                                Crafting <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Spaces</span> That Inspire Lives
                             </motion.h1>
 
                             <motion.p
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.7, delay: 0.4 }}
-                                className="text-xl text-gray-300 mb-10 leading-relaxed max-w-2xl"
+                                className="text-lg text-gray-300 mb-8 leading-relaxed"
                             >
-                                Transforming skylines across Northern India with innovative real estate developments that blend luxury, sustainability, and community living.
+                                For over three decades, we have been at the forefront of real estate development in Northern India, creating sustainable communities and architectural landmarks that stand the test of time.
+                            </motion.p>
+
+                            <motion.p
+                                initial={{ opacity: 0, y: 30 }}
+                                animate={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.7, delay: 0.5 }}
+                                className="text-lg text-gray-300 mb-10 leading-relaxed"
+                            >
+                                Our journey began with a simple vision: to transform urban landscapes while maintaining the highest standards of quality, integrity, and customer satisfaction.
                             </motion.p>
 
                             <motion.div
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
-                                transition={{ duration: 0.7, delay: 0.5 }}
-                                className="flex flex-col sm:flex-row gap-4"
+                                transition={{ duration: 0.7, delay: 0.6 }}
+                                className="flex flex-col sm:flex-row gap-4 mb-12"
                             >
                                 <button className="relative group bg-gradient-to-r from-cyan-500 to-blue-600 text-white px-8 py-4 rounded-xl font-semibold overflow-hidden transition-all duration-300 hover:shadow-2xl hover:shadow-cyan-500/30">
-                                    <span className="relative z-10">Explore Our Projects</span>
+                                    <span className="relative z-10">Our Story</span>
                                     <div className="absolute inset-0 bg-gradient-to-r from-cyan-600 to-blue-700 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
-                                    <div className="absolute top-0 left-0 w-full h-full flex justify-center items-center">
-                                        <div className="w-64 h-64 bg-white/10 rounded-full transform scale-0 group-hover:scale-100 transition-transform duration-500"></div>
-                                    </div>
                                 </button>
 
                                 <button className="relative group bg-transparent border-2 border-white/30 text-white px-8 py-4 rounded-xl font-semibold overflow-hidden transition-all duration-300 hover:border-white/60 hover:bg-white/10">
-                                    <span className="relative z-10">Contact Our Team</span>
-                                    <div className="absolute inset-0 bg-white/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
+                                    <span className="relative z-10">Meet Our Team</span>
                                 </button>
                             </motion.div>
 
@@ -91,77 +97,75 @@ export default function About() {
                                 initial={{ opacity: 0 }}
                                 animate={{ opacity: 1 }}
                                 transition={{ duration: 1, delay: 1 }}
-                                className="mt-12 flex items-center justify-center lg:justify-start gap-6"
+                                className="grid grid-cols-2 md:grid-cols-3 gap-6 border-t border-white/10 pt-8"
                             >
                                 {[
-                                    { value: "50+", label: "Projects" },
-                                    { value: "10K+", label: "Customers" },
-                                    { value: "5+", label: "Cities" }
+                                    { value: "20+", label: "Years Experience" },
+                                    { value: "20+", label: "Completed Projects" },
+                                    { value: "5+", label: "Cities Presence" },
+                                 
                                 ].map((stat, index) => (
                                     <div key={index} className="text-center">
-                                        <div className="text-2xl md:text-3xl font-bold text-white">{stat.value}</div>
+                                        <div className="text-2xl font-bold text-white mb-1">{stat.value}</div>
                                         <div className="text-sm text-gray-400">{stat.label}</div>
                                     </div>
                                 ))}
                             </motion.div>
                         </motion.div>
 
-                        {/* Visual element */}
+                        {/* Visual element with building image */}
                         <motion.div
                             initial={{ opacity: 0, x: 50, rotate: 5 }}
                             animate={{ opacity: 1, x: 0, rotate: 0 }}
                             transition={{ duration: 0.7, delay: 0.4 }}
                             className="lg:w-1/2 relative"
                         >
-                            <div className="relative w-full max-w-lg mx-auto">
-                                {/* Main building visual */}
-                                <div className="relative z-10 bg-gradient-to-b from-blue-800 to-blue-900 rounded-t-2xl w-64 h-80 mx-auto shadow-2xl">
-                                    <div className="absolute top-0 left-0 w-full h-4 bg-blue-700 rounded-t-2xl"></div>
-
-                                    {/* Windows */}
-                                    <div className="absolute top-8 left-4 right-4 grid grid-cols-4 gap-2">
-                                        {[...Array(16)].map((_, i) => (
-                                            <div key={i} className="h-6 bg-blue-600 rounded-sm">
-                                                <div className="h-4 w-4 mx-auto mt-1 bg-yellow-300 rounded-sm blur-[1px]"></div>
-                                            </div>
-                                        ))}
+                            <div className="relative w-full max-w-2xl mx-auto">
+                                {/* Main building image with enhanced size and styling */}
+                                <div className="relative z-10  overflow-hidden">
+                                    <div className="w-full h-96 lg:h-[550px] relative">
+                                        <Image
+                                            src="/images/about/home-img.png"
+                                            alt="Modern Building Architecture"
+                                            fill
+                                            className="object-cover"
+                                            priority
+                                        />
+                                        {/* Subtle overlay to enhance contrast */}
+                                        <div className="absolute inset-0 bg-gradient-to-t from-blue-900/10 to-transparent"></div>
                                     </div>
-
-                                    {/* Shine effect */}
-                                    <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-transparent via-white/10 to-transparent skew-x-12 transform translate-x-64"></div>
                                 </div>
 
-                                {/* Reflected building */}
-                                <div className="relative z-0 bg-gradient-to-t from-blue-900 to-blue-800 w-64 h-20 mx-auto opacity-40 blur-sm -mt-1"></div>
+                                {/* Shine effect */}
+                                <div className="absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-12 transform translate-x-64 z-20"></div>
 
-                                {/* Surrounding elements */}
+                                {/* Decorative elements */}
                                 <div className="absolute -top-4 -left-4 w-16 h-16 bg-cyan-500/30 rounded-full blur-xl"></div>
                                 <div className="absolute -bottom-4 -right-4 w-24 h-24 bg-purple-500/30 rounded-full blur-xl"></div>
 
-                                {/* Floating cards */}
+                                {/* Floating info cards - About focused */}
                                 <motion.div
                                     initial={{ y: 20, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ duration: 0.7, delay: 0.8 }}
-                                    className="absolute -top-6 -right-6 bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20 shadow-2xl"
+                                    className="absolute -top-6 -right-6 bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20 shadow-2xl max-w-[180px]"
                                 >
-                                    <div className="text-white text-sm font-medium">Since 1989</div>
-                                    <div className="text-cyan-300 text-xs">Building Legacies</div>
+                                    <div className="text-white text-sm font-medium">Quality Craftsmanship</div>
+                                    <div className="text-cyan-300 text-xs">Since 1989</div>
                                 </motion.div>
 
                                 <motion.div
                                     initial={{ y: 20, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
                                     transition={{ duration: 0.7, delay: 1 }}
-                                    className="absolute -bottom-6 -left-6 bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20 shadow-2xl"
+                                    className="absolute -left-6 bg-white/10 backdrop-blur-md p-4 rounded-2xl border border-white/20 shadow-2xl max-w-[180px]"
                                 >
-                                    <div className="text-white text-sm font-medium">Northern India</div>
-                                    <div className="text-cyan-300 text-xs">Presence in 5+ Cities</div>
+                                    <div className="text-white text-sm font-medium">Sustainable Development</div>
+                                    <div className="text-cyan-300 text-xs">Green Initiatives</div>
                                 </motion.div>
                             </div>
                         </motion.div>
                     </div>
-
                 </div>
             </section>
 
@@ -176,7 +180,7 @@ export default function About() {
                             viewport={{ once: true }}
                             className="text-3xl md:text-4xl font-cursive font-semibold mb-8 text-gray-800"
                         >
-                            At Dynamic & Eminent Infradevelopers
+                            At Echelon
                         </motion.h2>
 
                         <motion.p
@@ -516,99 +520,110 @@ export default function About() {
             </section>
 
             {/* What we do */}
-            <section className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
-                {/* Decorative elements */}
-                <div className="absolute top-0 left-0 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
-                <div className="absolute top-0 right-0 w-72 h-72 bg-cyan-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
-                <div className="absolute bottom-0 left-1/2 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
+         <section className="py-20 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
+    {/* Decorative elements */}
+    <div className="absolute top-0 left-0 w-72 h-72 bg-blue-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob"></div>
+    <div className="absolute top-0 right-0 w-72 h-72 bg-cyan-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-2000"></div>
+    <div className="absolute bottom-0 left-1/2 w-72 h-72 bg-indigo-100 rounded-full mix-blend-multiply filter blur-3xl opacity-30 animate-blob animation-delay-4000"></div>
 
-                <div className="container mx-auto px-6 relative z-10">
-                    <motion.h2
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5 }}
-                        viewport={{ once: true }}
-                        className="text-4xl md:text-5xl font-semibold font-cursive text-center mb-4 text-gray-800"
-                    >
-                        What We <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">Do</span>
-                    </motion.h2>
+    <div className="container mx-auto px-6 relative z-10">
+        <motion.h2
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5 }}
+            viewport={{ once: true }}
+            className="text-4xl md:text-5xl font-semibold font-cursive text-center mb-4 text-gray-800"
+        >
+            What We <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">Do</span>
+        </motion.h2>
 
-                    <motion.p
-                        initial={{ opacity: 0, y: 20 }}
-                        whileInView={{ opacity: 1, y: 0 }}
-                        transition={{ duration: 0.5, delay: 0.1 }}
-                        viewport={{ once: true }}
-                        className="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto"
-                    >
-                        Crafting exceptional living and commercial spaces that transform communities
-                    </motion.p>
+        <motion.p
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="text-xl text-center text-gray-600 mb-16 max-w-3xl mx-auto"
+        >
+            Crafting exceptional living and commercial spaces that transform communities
+        </motion.p>
 
-                    <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: 0.1 }}
-                            viewport={{ once: true }}
-                            className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-blue-100 relative overflow-hidden"
-                        >
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full"></div>
-                            <div className="relative z-10">
-                                <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
-                                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
-                                    </svg>
-                                </div>
-                                <h3 className="text-2xl font-semibold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">Our Specialization</h3>
-                                <p className="text-gray-600 mb-6 leading-relaxed">
-                                    We specialize in developing housing societies, townships, apartments, malls, and multiplexes designed to cater to every segment of society — from working professionals to business leaders.
-                                </p>
-                                <ul className="space-y-3">
-                                    {['Housing Societies', 'Integrated Townships', 'Premium Apartments', 'Commercial Malls', 'Multiplex Complexes'].map((item, index) => (
-                                        <li key={index} className="flex items-center text-gray-700">
-                                            <svg className="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>
-                                            {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </motion.div>
-
-                        <motion.div
-                            initial={{ opacity: 0, y: 30 }}
-                            whileInView={{ opacity: 1, y: 0 }}
-                            transition={{ duration: 0.6, delay: 0.2 }}
-                            viewport={{ once: true }}
-                            className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 hover:border-green-100 relative overflow-hidden"
-                        >
-                            <div className="absolute top-0 right-0 w-32 h-32 bg-green-50 rounded-bl-full"></div>
-                            <div className="relative z-10">
-                                <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-teal-600 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
-                                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
-                                    </svg>
-                                </div>
-                                <h3 className="text-2xl font-semibold mb-4 text-gray-800 group-hover:text-green-600 transition-colors duration-300">Our Vision</h3>
-                                <p className="text-gray-600 mb-6 leading-relaxed">
-                                    Each project is driven by the vision of creating not just structures, but thriving communities in a spiritual and healthy environment.
-                                </p>
-                                <ul className="space-y-3">
-                                    {['Community-Centric Design', 'Sustainable Development', 'Quality Craftsmanship', 'Innovative Solutions', 'Customer Satisfaction'].map((item, index) => (
-                                        <li key={index} className="flex items-center text-gray-700">
-                                            <svg className="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                                            </svg>
-                                            {item}
-                                        </li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </motion.div>
-                    </div>
+        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+            {/* First Card */}
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.1 }}
+                viewport={{ once: true }}
+                className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 relative overflow-hidden"
+            >
+                {/* Animated Corner Background - Blue */}
+                <div className="absolute top-0 right-0 w-32 h-32 rounded-bl-full overflow-hidden">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-blue-50 rounded-bl-full transition-all duration-700 group-hover:w-full group-hover:h-full group-hover:rounded-2xl"></div>
                 </div>
-            </section>
+                
+                <div className="relative z-10">
+                    <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-cyan-600 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+                        </svg>
+                    </div>
+                    <h3 className="text-2xl font-semibold mb-4 text-gray-800 group-hover:text-blue-600 transition-colors duration-300">Our Specialization</h3>
+                    <p className="text-gray-600 mb-6 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                        We specialize in developing housing societies, townships, apartments, malls, and multiplexes designed to cater to every segment of society — from working professionals to business leaders.
+                    </p>
+                    <ul className="space-y-3">
+                        {['Housing Societies', 'Integrated Townships', 'Premium Apartments', 'Commercial Malls', 'Multiplex Complexes'].map((item, index) => (
+                            <li key={index} className="flex items-center text-gray-700 group-hover:text-gray-800 transition-colors duration-300">
+                                <svg className="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                </svg>
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </motion.div>
 
+            {/* Second Card */}
+            <motion.div
+                initial={{ opacity: 0, y: 30 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: 0.2 }}
+                viewport={{ once: true }}
+                className="group bg-white p-8 rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 border border-gray-100 relative overflow-hidden"
+            >
+                {/* Animated Corner Background - Green */}
+                <div className="absolute top-0 right-0 w-32 h-32 rounded-bl-full overflow-hidden">
+                    <div className="absolute top-0 right-0 w-32 h-32 bg-green-50 rounded-bl-full transition-all duration-700 group-hover:w-full group-hover:h-full group-hover:rounded-2xl"></div>
+                </div>
+                
+                <div className="relative z-10">
+                    <div className="w-16 h-16 bg-gradient-to-r from-green-600 to-teal-600 rounded-2xl flex items-center justify-center text-white mb-6 group-hover:scale-110 transition-transform duration-300">
+                        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z" />
+                        </svg>
+                    </div>
+                    <h3 className="text-2xl font-semibold mb-4 text-gray-800 group-hover:text-green-600 transition-colors duration-300">Our Vision</h3>
+                    <p className="text-gray-600 mb-6 leading-relaxed group-hover:text-gray-700 transition-colors duration-300">
+                        Each project is driven by the vision of creating not just structures, but thriving communities in a spiritual and healthy environment.
+                    </p>
+                    <ul className="space-y-3">
+                        {['Community-Centric Design', 'Sustainable Development', 'Quality Craftsmanship', 'Innovative Solutions', 'Customer Satisfaction'].map((item, index) => (
+                            <li key={index} className="flex items-center text-gray-700 group-hover:text-gray-800 transition-colors duration-300">
+                                <svg className="w-5 h-5 text-green-500 mr-3" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                                </svg>
+                                {item}
+                            </li>
+                        ))}
+                    </ul>
+                </div>
+            </motion.div>
+        </div>
+    </div>
+
+    
+</section>
 
 
             <style jsx>{`
