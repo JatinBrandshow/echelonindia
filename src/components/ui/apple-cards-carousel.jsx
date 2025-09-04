@@ -208,7 +208,7 @@ export const Card = ({
             </AnimatePresence>
             <motion.button
                 layoutId={layout ? `card-${card.title}` : undefined}
-                onClick={handleOpen}
+                // onClick={handleOpen}
                 className="relative z-10 flex flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 h-[30rem] w-80 dark:bg-neutral-900">
                 <div
                     className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/90 via-black/10 to-transparent" />
