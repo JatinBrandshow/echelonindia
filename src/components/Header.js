@@ -31,7 +31,7 @@ export function Header() {
     //   link: "/blogs",
     // },
     {
-      name: "Schedule a site visit",
+      name: "Contact",
       link: "/contact",
     },
   ];
