@@ -1,5 +1,6 @@
 import { AppleCarousel } from '@/components/AppleCarousel'
 import { HeroSection } from '@/components/HeroSection'
+import { PlansCarousel } from '@/components/PlansCarousel'
 import { SVGMaskEffect } from '@/components/SVGMaskEffect'
 import { Testimonials } from '@/components/Testimonials'
 import { TypewriterText } from '@/components/TypewriterText'
@@ -10,9 +11,10 @@ const HomePage = () => {
         <>
             <HeroSection />
             <AppleCarousel />
-            <TypewriterText />
-            <SVGMaskEffect />
+            <PlansCarousel />
             <Testimonials />
+            <SVGMaskEffect />
+            <TypewriterText />
         </>
     )
 }

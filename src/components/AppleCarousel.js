@@ -3,6 +3,7 @@
 import React from "react";
 import { Card, Carousel } from "./ui/apple-cards-carousel";
 import Image from "next/image";
+import Heading from "./Heading";
 
 export function AppleCarousel() {
   const cards = data.map((card, index) => (
@@ -10,11 +11,8 @@ export function AppleCarousel() {
   ));
 
   return (
-    <div className="w-full h-full py-10">
-      <h2
-        className="text-center font-medium text-3xl md:text-5xl lg:text-6xl text-black ">
-        Our Projects.
-      </h2>
+    <div className="w-full h-full py-10 sm:py-20">
+      <Heading heading="Our Projects" />
       <div className="max-w-[1345px] mx-auto">
         <Carousel items={cards} />
       </div>
