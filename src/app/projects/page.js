@@ -92,9 +92,9 @@ const Projects = () => {
     return (
         <>
             <section className='h-[70vh] md:h-[90vh] flex flex-col justify-center items-center bg-gradient-to-b from-cyan-200 to-gray-300'>
-                <div className='max-w-3xl mx-auto px-4 text-center space-y-6'>
-                    <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 font-cursive'>Award-winning real estate website designs</h1>
-                    <p>With over 1,500 five-star reviews and numerous RealTrends™ awards, Luxury Presence is the leading provider of beautiful, effective real estate websites for agents, teams, and brokers. Check out the portfolio of our most recent website designs.</p>
+                <div className='max-sm:mt-20 max-w-5xl mx-auto px-4 text-center space-y-6'>
+                    <h1 className='text-4xl sm:text-5xl md:text-6xl font-bold text-gray-800 font-cursive'>Explore Our Luxury Real Estate Developments</h1>
+                    <p className='leading-snug'>At Echelon, we believe every home is more than just a space—it’s a lifestyle. Our luxury real estate developments are thoughtfully designed to blend modern architecture, world-class amenities, and timeless elegance. From premium residences to landmark communities, each project reflects our commitment to quality, innovation, and comfort. Explore our portfolio and discover the perfect place where your dreams of refined living truly come alive.</p>
                 </div>
             </section>
             <section className="max-w-[1400px] mx-auto px-4 sm:px-6 py-8 sm:py-24 space-y-20">
