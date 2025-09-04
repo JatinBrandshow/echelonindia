@@ -185,15 +185,15 @@ export const Card = ({
                             exit={{ opacity: 0 }}
                             ref={containerRef}
                             layoutId={layout ? `card-${card.title}` : undefined}
-                            className="relative z-[60] mx-auto my-10 h-fit max-w-5xl rounded-3xl bg-white p-4 font-sans md:p-10 dark:bg-neutral-900">
+                            className="relative z-[60] mx-auto my-10 h-fit max-w-5xl rounded-3xl p-4 font-sans md:p-10 bg-neutral-900">
                             <button
-                                className="sticky top-4 right-0 ml-auto flex h-8 w-8 items-center justify-center rounded-full bg-black dark:bg-white"
+                                className="sticky top-4 right-0 ml-auto flex h-8 w-8 items-center justify-center rounded-full bg-white"
                                 onClick={handleClose}>
-                                <IconX className="h-6 w-6 text-neutral-100 dark:text-neutral-900" />
+                                <IconX className="h-6 w-6 text-neutral-900" />
                             </button>
                             {/* <motion.p
                                 layoutId={layout ? `category-${card.title}` : undefined}
-                                className="text-base font-medium text-black dark:text-white">
+                                className="text-base font-medium text-white">
                                 {card.category}
                             </motion.p> */}
                             <motion.p
@@ -209,7 +209,7 @@ export const Card = ({
             <motion.button
                 layoutId={layout ? `card-${card.title}` : undefined}
                 // onClick={handleOpen}
-                className="relative z-10 flex flex-col items-start justify-start overflow-hidden rounded-3xl bg-gray-100 h-[30rem] w-80 dark:bg-neutral-900">
+                className="relative z-10 flex flex-col items-start justify-start overflow-hidden rounded-3xl h-[30rem] w-80 bg-neutral-900">
                 <div
                     className="pointer-events-none absolute inset-x-0 top-0 z-30 h-full bg-gradient-to-b from-black/90 via-black/10 to-transparent" />
                 <div className="relative z-40 p-4 md:p-8">

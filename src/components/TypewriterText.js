@@ -16,7 +16,7 @@ export function TypewriterText() {
         },
         {
             text: "chelon.",
-            className: "text-blue-500 dark:text-blue-500",
+            className: "text-blue-500",
         },
     ];
     return (
@@ -28,7 +28,7 @@ export function TypewriterText() {
             <div
                 className="flex flex-row space-y-4 space-x-2 md:space-x-4">
                 <button
-                    className="w-40 h-10 rounded-xl bg-black border dark:border-white border-transparent text-white text-sm">
+                    className="w-40 h-10 rounded-xl bg-black border border-white text-white text-sm">
                     Join now
                 </button>
                 <button
