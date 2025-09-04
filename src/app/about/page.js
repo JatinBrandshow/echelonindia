@@ -112,7 +112,7 @@ export default function About() {
                             </motion.div>
                         </motion.div>
 
-                        {/* Visual element with building image - Placed first on mobile */}
+                        {/* Visual element with building image  */}
                         <motion.div
                             initial={{ opacity: 0, x: 50, rotate: 5 }}
                             animate={{ opacity: 1, x: 0, rotate: 0 }}
@@ -120,7 +120,7 @@ export default function About() {
                             className="lg:w-1/2 relative order-1 lg:order-2 mb-10 lg:mb-0 w-full"
                         >
                             <div className="relative w-full max-w-2xl mx-auto">
-                                {/* Main building image with enhanced size and styling */}
+                                {/* Main building image */}
                                 <div className="relative z-10 overflow-hidden rounded-lg lg:rounded-xl">
                                     <div className="w-full h-64 sm:h-80 md:h-96 lg:h-[550px] relative">
                                         <Image
@@ -136,14 +136,14 @@ export default function About() {
                                     </div>
                                 </div>
 
-                                {/* Shine effect - Hidden on mobile */}
+                                {/* Shine effect*/}
                                 <div className="hidden lg:block absolute top-0 left-0 w-20 h-full bg-gradient-to-r from-transparent via-white/5 to-transparent skew-x-12 transform translate-x-64 z-20"></div>
 
-                                {/* Decorative elements - Adjusted for mobile */}
+                                {/* Decorative elements */}
                                 <div className="absolute -top-2 -left-2 sm:-top-4 sm:-left-4 w-12 h-12 sm:w-16 sm:h-16 bg-cyan-500/30 rounded-full blur-xl"></div>
                                 <div className="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 w-16 h-16 sm:w-24 sm:h-24 bg-purple-500/30 rounded-full blur-xl"></div>
 
-                                {/* Floating info cards - Adjusted for mobile */}
+                                {/* Floating info cards  */}
                                 <motion.div
                                     initial={{ y: 20, opacity: 0 }}
                                     animate={{ y: 0, opacity: 1 }}
