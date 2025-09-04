@@ -53,7 +53,7 @@ export default function About() {
                                 initial={{ opacity: 0, y: 30 }}
                                 animate={{ opacity: 1, y: 0 }}
                                 transition={{ duration: 0.7, delay: 0.3 }}
-                                className="text-4xl md:text-6xl font-bold mb-6 text-white"
+                                className="text-4xl md:text-6xl font-cursive font-semibold mb-6 text-white"
                             >
                                 Building <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500">Tomorrow's</span> Landmarks
                             </motion.h1>
@@ -174,7 +174,7 @@ export default function About() {
                             whileInView={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.5 }}
                             viewport={{ once: true }}
-                            className="text-3xl md:text-4xl font-bold mb-8 text-gray-800"
+                            className="text-3xl md:text-4xl font-cursive font-semibold mb-8 text-gray-800"
                         >
                             At Dynamic & Eminent Infradevelopers
                         </motion.h2>
@@ -209,7 +209,7 @@ export default function About() {
                         viewport={{ once: true }}
                         className="text-center mb-16"
                     >
-                        <h2 className="text-4xl md:text-5xl font-bold mb-4 text-gray-800">
+                        <h2 className="text-4xl md:text-5xl font-semibold font-cursive mb-4 text-gray-800">
                             Our <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">Journey</span>
                         </h2>
                         <div className="w-24 h-1 bg-gradient-to-r from-blue-500 to-cyan-500 mx-auto mb-6"></div>
@@ -267,7 +267,7 @@ export default function About() {
                             className="lg:w-1/2"
                         >
                             <div className="relative">
-                                <h2 className="text-3xl md:text-4xl font-bold mb-8 text-gray-800">
+                                <h2 className="text-3xl md:text-4xl font-semibold font-cursive mb-8 text-gray-800">
                                     Building Legacies Since 1989
                                 </h2>
 
@@ -402,7 +402,7 @@ export default function About() {
                                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
                                 </svg>
                             </div>
-                            <h2 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-200">
+                            <h2 className="text-4xl md:text-5xl font-semibold font-cursive pb-1 mb-4 bg-clip-text text-transparent bg-gradient-to-r from-white to-blue-200">
                                 Our Philosophy
                             </h2>
                             <div className="w-20 h-1 bg-gradient-to-r from-blue-400 to-cyan-400 mx-auto mb-6"></div>
@@ -528,7 +528,7 @@ export default function About() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
-                        className="text-4xl md:text-5xl font-bold text-center mb-4 text-gray-800"
+                        className="text-4xl md:text-5xl font-semibold font-cursive text-center mb-4 text-gray-800"
                     >
                         What We <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-cyan-600">Do</span>
                     </motion.h2>

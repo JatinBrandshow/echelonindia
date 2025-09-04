@@ -63,7 +63,7 @@ export const Header = () => {
         <div
             className="max-w-7xl relative mx-auto px-4 py-40 w-full left-0 top-0"
         >
-            <h1 className="text-5xl md:text-7xl font-medium text-black">
+            <h1 className="text-5xl md:text-7xl font-bold font-cursive text-black">
                 Building Homes, <br /> Creating Communities
             </h1>
             <p className="max-w-2xl text-base md:text-xl mt-8 text-gray-600">

@@ -8,11 +8,11 @@ export function SVGMaskEffect() {
             <MaskContainer
                 revealText={
                     <p
-                        className="text-center text-4xl font-bold px-2 sm:px-40 text-white">
+                        className="text-center text-4xl font-bold font-cursive px-2 sm:px-48 md:px-72 lg:px-96 text-white">
                           From dream homes , premium properties and thriving commercial spaces -we build the future you deserve
                     </p>
                 }
-                className="h-[40rem] rounded-md border text-black">
+                className="h-[40rem] font-bold font-cursive rounded-md border text-black">
                 Your trusted partner for{" "}
                 <span className="text-blue-500">real estate</span> — whether it’s a dream{" "}
                 <span className="text-blue-500">home</span>, prime{" "}

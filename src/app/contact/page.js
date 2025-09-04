@@ -78,7 +78,7 @@ export default function Contact() {
                             </div>
                         </motion.div>
 
-                        <h1 className="text-4xl md:text-6xl font-bold mb-6 leading-tight">
+                        <h1 className="text-4xl md:text-6xl font-semibold font-cursive mb-6 leading-tight">
                             Connect With <span className="text-cyan-400">Us</span>
                         </h1>
 
@@ -134,7 +134,7 @@ export default function Contact() {
                         viewport={{ once: true }}
                         className="text-center mb-16"
                     >
-                        <h1 className="text-4xl md:text-5xl font-bold text-navy-900 mb-4">Get in Touch</h1>
+                        <h1 className="text-4xl md:text-5xl font-semibold font-cursive text-navy-900 mb-4">Get in Touch</h1>
                         <p className="text-lg text-navy-700 max-w-2xl mx-auto">
                             Have questions or want to discuss a project? Reach out to us and our team will get back to you shortly.
                         </p>
@@ -150,7 +150,7 @@ export default function Contact() {
                             className="lg:w-1/2"
                         >
                             <div className="bg-white rounded-2xl drop-shadow-2xl p-8 md:p-10 border border-gray-200 h-full">
-                                <h2 className="text-2xl md:text-3xl font-bold mb-6 text-navy-900 tracking-tighter text-center">Send us a Message</h2>
+                                <h2 className="text-2xl md:text-3xl font-semibold font-cursive mb-6 text-navy-900 tracking-tighter text-center">Send us a Message</h2>
                                 <p className="text-gray-600 mb-8 mx-auto text-center max-w-sm">
                                     Fill out the form below and our team will get back to you within 24 hours.
                                 </p>
@@ -279,7 +279,7 @@ export default function Contact() {
                                 <div className="flex flex-col lg:flex-row gap-8">
                                     {/* Contact Info Content */}
                                     <div className="lg:w-2/3">
-                                        <h2 className="text-2xl md:text-3xl font-bold mb-8">Contact Information</h2>
+                                        <h2 className="text-2xl md:text-3xl font-semibold font-cursive mb-8">Contact Information</h2>
 
                                         <div className="space-y-8">
                                             <div className="flex items-start">
@@ -406,7 +406,7 @@ export default function Contact() {
                         viewport={{ once: true }}
                         className="bg-white rounded-2xl drop-shadow-xl border border-gray-300 overflow-hidden"
                     >
-                        <h2 className="text-2xl md:text-3xl font-bold text-gray-800 text-center p-6">Find Us Here</h2>
+                        <h2 className="text-2xl md:text-3xl font-semibold font-cursive text-gray-800 text-center p-6">Find Us Here</h2>
                         <div className="h-96 w-full">
                             <iframe
                                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14008.107842302205!2d77.206532!3d28.632485!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cfd5b347eb62d%3A0x52c2b7494e204dce!2sNew%20Delhi%2C%20Delhi!5e0!3m2!1sen!2sin!4v1684832540725!5m2!1sen!2sin"

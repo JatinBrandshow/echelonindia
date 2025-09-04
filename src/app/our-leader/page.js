@@ -71,7 +71,7 @@ export default function Leadership() {
             {/* Hero Section */}
             <section id="hero" className="hero-bg min-h-screen flex items-center pt-16 pb-28">
                 <div className="container mx-auto px-6 text-center text-white">
-                    <h1 className="text-4xl md:text-6xl font-bold mb-6 animate-fade-in">MANISH AGARWAL</h1>
+                    <h1 className="text-4xl md:text-6xl font-semibold mb-6 font-cursive animate-fade-in">MANISH AGARWAL</h1>
                     <p className="text-xl md:text-2xl mb-8 animate-fade-in delay-200">Real Estate Developer | Founder & Managing Director</p>
                     <p className="text-lg md:text-xl max-w-3xl mx-auto mb-10 animate-fade-in delay-400">Highly accomplished real estate developer with 20+ years of experience in developing and managing a variety of real estate projects across Northern India.</p>
                     <div className="animate-fade-in delay-600">
@@ -84,7 +84,7 @@ export default function Leadership() {
             {/* About Section */}
             <section id="about" className="py-20 bg-white">
                 <div className="container mx-auto px-6">
-                    <h2 className="text-3xl md:text-4xl font-bold text-center mb-16">About</h2>
+                    <h2 className="text-3xl md:text-4xl font-semibold font-cursive text-center mb-16">About</h2>
                     <div className="flex flex-col md:flex-row items-center">
                         <div className="md:w-1/3 mb-10 md:mb-0 flex justify-center">
                             <div className="w-64 h-64 bg-blue-100 rounded-full overflow-hidden shadow-xl">
@@ -153,7 +153,7 @@ export default function Leadership() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
-                        className="text-3xl md:text-4xl font-bold text-center mb-12 text-white"
+                        className="text-3xl md:text-4xl font-semibold font-cursive text-center mb-12 text-white"
                     >
                         Leadership & <span className="text-blue-400">Ownership</span>
                     </motion.h2>
@@ -303,7 +303,7 @@ export default function Leadership() {
                         whileInView={{ opacity: 1, y: 0 }}
                         transition={{ duration: 0.5 }}
                         viewport={{ once: true }}
-                        className="text-3xl md:text-4xl font-bold text-center mb-16"
+                        className="text-3xl md:text-4xl font-semibold font-cursive text-center mb-16"
                     >
                         Companies <span className="text-blue-600">Overview</span>
                     </motion.h2>
